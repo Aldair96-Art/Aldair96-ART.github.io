@@ -6,54 +6,46 @@ body {
 h1 {
    text-align: center;
    padding-top:20px;
+   font-size: 1.25em;
+   font-family: 'Lora', serif;
 }
-.h2 {
-   font-size:1.3em;
+h2 {
+   font-size: 1em;
+   font-family: 'Lora', serif;
 }
-header {
-   background-color:#16044F;
-   height:75px;
-   border-radius: 25px 25px 0 0;
+header, footer {
+   background-color:#03175B;
    color:#FBFBFB;
-   position:relative;
+   min-height:75px;
+   text-align:center;
+   padding:20px;
 }
-
-#designportal {
-    margin-left:30px;
- }
-#designportal_hr {
-    margin-left:30px;
-    width:700px;
- }
 
 footer {
-   background-color:#03175B;
-   height:75px;
-   border-radius: 0 0 25px 25px;
-   color: #FBFBFB;
-   text-align:center;
-   padding-top: 25px;
+   font-size:.8em;
 }
 main {
    background-color: #FBFBFB;
    border: solid thick #03175B;
 }
 #content {
-   width:800px;
+   max-width:800px;
    margin: 100px auto 0 auto;
 }
 #image {
-   position:absolute;
-   top: 15px;
-   left:590px;
-   border-radius: 0 10px 0 0;
    width:200px;
+   margin:15px;
 }
-
-
+#portal {
+   margin-left:30px;
+}
+#portal_hr {
+   margin-left:30px;
+   width:80%;
+}
 #updated {
-   color: yellow;
+   color: rgb(255, 255, 255);
 }
-#b_link {
+#byui_link {
    color:white;
 }
