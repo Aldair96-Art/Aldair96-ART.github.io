@@ -1,0 +1,104 @@
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 14px;
+ }
+ h1,h2,h3 {
+    font-family: 'Bree Serif', serif;
+ }
+ h1 {
+    font-size: 1.5em;
+ }
+ h2 {
+    font-size: 1.25em;
+ }
+ header {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 50px 30px 30px 150px;   
+ }
+ footer {
+    background-color:#1469e2;
+    color:#FBFBFB;
+    text-align:center;
+    padding:20px;  
+ }
+ label {
+    font-weight: bold;
+ }
+ nav {
+    grid-row: 4;
+    grid-column: 1/3;
+ }
+ nav ul { 
+    list-style: none;
+    margin: 0 auto;
+    background-color: #1469e2;
+    text-align: center;
+ }
+ nav li {
+    padding: 10px 0 10px 0;
+ }
+ 
+ nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+ }
+ 
+ nav li a:hover {
+    display: block;
+    text-decoration: none;
+    color: #fff800;
+    transform: scale(1.1);
+ }
+ #byui_link {
+    color:white;
+ }
+ #colors {
+    width: 100%;
+ }
+ #content {
+    padding:10px;
+ }
+ #fonts_table td {
+    padding:5px;
+ }
+ 
+ #motto {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+ }
+ #title {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+ }
+ #updated {
+    color: #fff800;
+ }
+ .logo {
+    width:100px;
+    grid-column: 1;
+    grid-row: 1/5;
+ }
+ .persona {
+    margin-top:20px;
+ }
+ .persona table {
+    border:solid thin black;
+    border-collapse: collapse;
+ }
+ .persona td {
+    border: solid thin gray;
+    padding: 5px;
+ }
+ .persona_photo {
+    width: 150px;
+ }
+ .persona th {
+    background-color:#e3d8d1;
+    text-align: left;
+    border: solid thin gray;
+    padding: 5px;
+ }
