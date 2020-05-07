@@ -29,7 +29,7 @@
    */
   
   main {
-    display: grid;
+    display: block;
   }
   
   /**
