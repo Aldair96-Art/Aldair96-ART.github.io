@@ -1,20 +1,24 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 14px;
     background-color: #ffffff;
  }
  h1,h2,h3 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
  }
  h1 {
     font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
  }
  h2 {
-    font-size: 3.25em;
+    font-size: 1.25em;
+    text-align: center;
  }
  h2 {
     font-size: 1.1em;
  }
+ 
  header {
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -29,10 +33,10 @@ body {
   }
 
  footer {
-    background-color:#034bb1;
+    background-color:#413c58;
     color:#FBFBFB;
     text-align:center;
-    padding:20px;  
+    padding:10px;
  }
  label {
     font-weight: bold;
@@ -44,9 +48,8 @@ body {
  nav ul { 
     list-style: none;
     margin: 0 auto;
-    background-color:#034bb1;
-    text-align: center;
-   
+    background-color:#413c58;
+     
  }
  nav li {
     padding: 10px 0 10px 10px;
@@ -56,6 +59,7 @@ body {
     display: block;
     text-decoration: none;
     color: white;
+    text-align: center;
  }
  
  nav li a:hover {
@@ -82,9 +86,9 @@ body {
     grid-row: 2;
     text-align: center;
  }
- #nav_typography {
-    background-color: #1469e2;
-    color: white;
+ #navi_typography {
+    background-color: #bfd7b5;
+    color: rgb(0, 0, 0);
  }
  #title {
     grid-column: 2;
@@ -92,16 +96,19 @@ body {
     text-align: center;
  }
  #typography_table {
-    border-collapse: collapse;
+   border-collapse: collapse;
+   padding: 10px;
  }
  #typography_table td {
     padding:10px;
+    border:1px solid black;
+    
  }
  #updated {
     color: #fff800;
  }
  .hovered {
-    color: #fff800;
+    color: #413c58 ;
     transform: scale(1.1);
  }
  .logo {
@@ -122,25 +129,37 @@ body {
     margin-top:20px;
     border: 1px solid #ccc;
     padding: 5px;
+    background-color: #bfd7b5;   
+ }
+
+ .Carolina {
+   padding: 15px 15px 0;
+   background-color: white;
+   box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+   -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+   -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+ }
+
+ .Eder {
+   padding: 15px 15px 0;
+   background-color: white;
+   box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+   -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
+   -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
  }
  .persona2 {
     margin-top:20px;
     border: 1px solid #ccc;
     padding: 5px;
+    background-color: #bfd7b5;
  }
  .persona table {
     border:solid thin black;
     border-collapse: collapse;
  }
  
-    
- 
  .persona_photo {
     width: 150px;
  }
- .persona th {
-    background-color:#e3d8d1;
-    text-align: left;
-    border: solid thin gray;
-    padding: 5px;
- }
+
+ 

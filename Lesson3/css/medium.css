@@ -12,8 +12,7 @@
        grid-template-columns: 200px 1fr;
        grid-template-rows: 40px 40px 40px 40px;  
     }
-    nav {
-    }
+  
     nav ul {
        display: flex;
     }
