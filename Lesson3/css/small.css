@@ -90,20 +90,18 @@ body {
     background-color: #bfd7b5;
     color: rgb(0, 0, 0);
  }
- #title {
-    grid-column: 2;
-    grid-row: 1;
-    text-align: center;
- }
+
  #typography_table {
    border-collapse: collapse;
    padding: 10px;
+   text-align: center;
  }
  #typography_table td {
     padding:10px;
     border:1px solid black;
-    
+    text-align: center;
  }
+
  #updated {
     color: #fff800;
  }
@@ -139,6 +137,12 @@ body {
    -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
    -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
  }
+ .persona2 {
+    margin-top:20px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #bfd7b5;
+ }
 
  .Eder {
    padding: 15px 15px 0;
@@ -146,12 +150,6 @@ body {
    box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
    -moz-box-shadow: 0 1px 2px rgba(34,25,25,0.4);
    -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
- }
- .persona2 {
-    margin-top:20px;
-    border: 1px solid #ccc;
-    padding: 5px;
-    background-color: #bfd7b5;
  }
  .persona table {
     border:solid thin black;
