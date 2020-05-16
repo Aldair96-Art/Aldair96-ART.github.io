@@ -27,10 +27,13 @@
        max-width: 900px;
        margin: auto;
     }
-    #logo {
-       grid-column: 2;
-       width:200px;
-    }
+    #logo1 {
+        width: 100px;
+        grid-column: 2/3;
+        grid-row: 1/4;
+        padding: 10px;
+     }
+    
     #menu_button {
        display: none;
     }

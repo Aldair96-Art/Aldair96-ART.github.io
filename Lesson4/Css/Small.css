@@ -4,18 +4,31 @@ body {
    background-color: #ffffff;
 }
 
- h1,h2,h3 {
+ h1,h2,#title,#motto {
    font-family: 'Lato', sans-serif;
 
  }
- 
- #title{
-   font-family: 'Lato', sans-serif;
+
+ h2{
+   font-size: 2.5em;
+   margin: 0.15rem;
+   text-align: center;
+   padding: 10px;
  }
+
+ main section {
+   margin: 0.5rem;
+   border: 1px solid #00001e;
+   padding: 0 1rem;
+   background-color: #BFD7BA;
+}
  
- #motto {
-   font-family: 'Lato', sans-serif;
- }
+ h3 {
+   font-family: sans-serif;
+   font-size: medium;
+   text-align: center;
+}
+
  h1, #title {
     font-size: 1.5em;
  }
@@ -36,14 +49,14 @@ body {
 /*title and motto code*/
 #title {
    margin-top: 15px;
-   grid-column: 2;
+   grid-column: 2/4;
    grid-row: 1;
    text-align: center;
    color:black;
 }
 #motto {
    margin-top: 5px;
-   grid-column: 2;
+   grid-column: 2/4;
    grid-row: 2;
    text-align: center;
    color: black;
@@ -65,7 +78,7 @@ body {
    }
  nav {
     grid-row: 4;
-    grid-column: 1/3;
+    grid-column: 1/4;
     margin-bottom: 20px;
  }
  nav ul { 
@@ -109,6 +122,7 @@ body {
     border: none;
     outline: none;
     font-size: 1.4rem;
+    margin-left: 7em;
  }
  
 
@@ -124,13 +138,17 @@ body {
 /*Title code */
 
  .title1 {
-    text-align: center;
+   margin-top: 15px;
+   grid-column: 2/4;
+   grid-row: 1;
+   text-align: center;
+   color: black;
  }
  
  #logo1 {
    width: 100px;
-   grid-column: 2/5;
-   grid-row: 1/1;
+   grid-column: 1/3;
+   grid-row: 1/4;
    padding: 10px;
 }
 
