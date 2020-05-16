@@ -16,7 +16,7 @@ body {
    padding: 10px;
  }
 
- section {
+ .sectiont {
    margin: 0.5rem;
    border: 1px solid #00001e;
    padding: 0 1rem;
@@ -136,14 +136,6 @@ body {
  }
  
 /*Title code */
-
- .title1 {
-   margin-top: 15px;
-   grid-column: 2/4;
-   grid-row: 1;
-   text-align: center;
-   color: black;
- }
  
  #logo1 {
    width: 100px;
@@ -151,13 +143,6 @@ body {
    grid-row: 1/4;
    padding: 10px;
 }
-
-
- .info {
-    margin: 15px 10px 15px 10px;
-    border: solid thin #C0C0C0;
-    padding: 15px;
- }
 
 /* footer code*/
  footer {
