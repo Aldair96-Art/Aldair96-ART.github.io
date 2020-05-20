@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Week 4-Preston Town Page">
+  <title>Real Time Weather</title>
+  <link rel="stylesheet" href="/lesson5/Css/Small.css">
+  <link rel="stylesheet" href="/lesson5/Css/Medium.css">
+  <link rel="stylesheet" href="/lesson5/Css/Large.css">
+  <link rel="stylesheet" href="/Lesson4/Css/Normalize.css">
+  <link rel="ICON" href="/lesson5/Images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header>
+      <img id="logo1" alt="Logo" src="/Images/logo1.png">
+      <h1  id="title">Real Time Weather</h1>
+      <h2  id="motto">Always aware of time</h2>
+      <nav>
+         <button onclick="toggle_nav()" id="menu_button">&#9776;Menu</button>
+         <ul id="main_nav" class="nav_hidden">
+            <li><a title="" href="#">Home</a></li>
+            <li><a class="active" title="Preston" href="/Lesson4/Preston-4.html">Preston</a></li>
+            <li><a title="" href="">Soda Springs</a></li>
+            <li><a title="" href="">Fish Haven</a></li>
+            <li><a title="" href="">Storm Center</a></li>
+            <li><a title="" href="">Gallery</a></li>
+         </ul>
+      </nav>
+   </header>
+   <main>
+      <h2>Preston Idaho</h2>
+        <section id="summ">
+            <img title="prest" src="/lesson5/Images/preston-idaho-area-chamber-of-commerce.jpg">
+            <div id="weathersummary">
+               <h3>Weather Summary</h3>
+               <p>Summary line one</p>
+               <p>Summary line two</p>
+               <p>Summary line three</p>
+               <p>Summary line four</p>
+            </div>
+
+        <section >
+            <div style="text-align:center;">
+            <table id="Dayforec">
+            <h3>5 Day Forecast</h3>
+              <tr>
+                  <th class="Days">Wed</th>
+                  <th class="Days">Thu</th>
+                  <th class="Days">Fri</th>
+                  <th class="Days">Sat</th>
+                  <th class="Days">Sun</th>
+             </tr>
+             <tr>
+                <td>Scattered Thunderstorms</td>
+                <td>Mostly Cloudy</td>
+                <td>PM Showers</td>
+                <td>Partly Cloudy</td>
+                <td>Partly Cloudy</td>
+            </tr>
+            <tr>
+                <td>53° / 41°</td>
+                <td>63° / 44°</td>
+                <td>61° / 33°</td>
+                <td>54° / 34°</td>
+                <td>63° / 38°</td>
+            </tr>
+            </table>
+        </div>
+        </section>
+
+        <article>
+            <div id="artcontent">
+               <h3>Spring Season</h3>
+               <p>Preston Idaho, it has a relevant weather during Spring season, usually deal with a max average of t°: 75 °F (+24 °C) and min average t°: 55 °F (+13 °C), Also Sundial in the day: 8 hours, Rainy days: 9 days and Precipitation: 4.1" (105 mm)</p>
+            <p>The weather can be affected because there is a variation of sun and raining but places like Cache National Forest and Cornish Park become an attractive place for visit in Spring.</p>
+            </div>
+            <img alt="Preston Winter" id="imagcache" src="/lesson5/Images/cache.jpg">
+         </article>
+            
+         <section id="map-info">
+            <div id="map"></div>
+            <div id="contact-info">
+               <h3>Contact Info</h3>
+               <p>30 N 1st E</p>
+               <p>Preston,ID 863263</p>
+               <p>999.999.9999</p>
+               <p>contact@Realtimeeather.net</p>
+            </div>
+         </section> 
+</main>
+<footer>
+ &#169; <span id="year"></span> | Aldair Artiaga | San Jose | Costa Rica | <a id="link" href="https://www.byui.edu/online">BYUI Online Learning</a> <br>
+ <span id="today"></span>
+</footer>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7futJ8PvCwb-_TD6pzqorZfqzJ2L6LIE&callback=initMap"></script>
+<script src="/lesson5/Js/Nav.js"></script>
+</body>
+</html>
