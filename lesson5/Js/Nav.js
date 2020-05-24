@@ -11,7 +11,11 @@ function toggle_nav() {
  document.getElementById("today").innerHTML = dayName + ', ' + date.getDate() + ' ' + monthName  + ' ' + year;
  document.getElementById("year").innerHTML = year;
 
- function initMap() {
-    let preston = {lat: 42.0974857, lng: -111.8788433};
-    let map = new google.maps.Map(document.getElementById('map'), {zoom: 13, center: preston});
- }
+ var d = new Date();
+const banner = document.getElementById("banner");
+if (d.getDay() == 5) {
+    pancakebanner.setAttribute("style", "display: block");
+}
+else {
+    pancakebanner.setAttribute("style", "display: none"); 
+}
