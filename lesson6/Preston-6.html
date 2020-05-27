@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width">
   <meta name="description" content="Week 5-Preston Town Page part 2">
   <title>Real Time Weather</title>
-  <link rel="stylesheet" href="/lesson5/Css/Small.css">
-  <link rel="stylesheet" href="/lesson5/Css/Medium.css">
-  <link rel="stylesheet" href="/lesson5/Css/Large.css">
-  <link rel="stylesheet" href="/Lesson4/Css/Normalize.css">
+  <link rel="stylesheet" href="/lesson6/Css/Small.css">
+  <link rel="stylesheet" href="/lesson6/Css/Medium.css">
+  <link rel="stylesheet" href="/lesson6/Css/Large.css">
+  <link rel="stylesheet" href="/Lesson6/Css/Normalize.css">
   <link rel="ICON" href="/lesson5/Images/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
 </head>
@@ -37,10 +37,16 @@
    <main>
       <h2>Preston Idaho</h2>
         <section id="summ">
-            <img title="prest" src="/lesson5/Images/preston-idaho-area-chamber-of-commerce.jpg">
+              <picture>
+                 <source media="(max-width: 400px)" srcset="./Images/prest-400.jpg">
+                 <source media="(max-width: 800px)" srcset="./Images/prest-800.jpg">   
+
+                 <img src="./Images/prest-1200.jpg" alt="prest">
+            </picture>
             <div id="weathersummary">
                <h3>Weather Summary</h3>
-               <p>Current: Party Cloud,34°</p>
+               <p>Currently: Party Cloud,34°</p>
+               <p>Wind Chill: <span id="windchill"></span> </p>
                <p>Today's High: 72°</p>
                <p>Humidity: 62%</p>
                <p>Wind Speed: 7 mph</p>
@@ -84,27 +90,31 @@
             <img alt="Preston Winter" id="imagcache" src="/lesson5/Images/cache.jpg">
          </article>
             
-         <section id="map-info">
-            <div id="map"></div>
-            <div id="contact-info">
-               <h3>Contact Info</h3>
-               <p>30 N 1st E</p>
-               <p>Preston,ID 83263</p>
-               <p>999.999.9999</p>
-               <p>contact@Realtimeeather.net</p>
-               <div class="social-icons">
-                <a href="https://www.facebook.com"> <img src="/lesson5/Images/facebook.png" alt="Facebook" ></a>
-                <a href="https://www.Instagram.com"><img src="/lesson5/Images/Instagram.png" alt="Instagram" ></a>
-                <a href="https://www.Youtube.com"> <img src="/lesson5/Images/Youtube.png" alt="Youtube" ></a>
+         <section id="map">
+            <div id="map-pic">
+                <div id="map-info">
+                    <h3 id="contact-title">Contact Info</h3>
+                     <p>30 N 1st E</p>
+                     <p>Preston,ID 83263</p>
+                     <p>999.999.9999</p>
+                     <p>contact@Realtimeeather.net</p>
+                    <div class="social-icons">
+                <a class="icon-imgf" href="https://www.facebook.com"> <img class="icon-img" src="/lesson5/Images/facebook.png" alt="Facebook" ></a>
+                <a class="icon-imgi" href="https://www.Instagram.com"><img   class="icon-img" src="/lesson5/Images/Instagram.png" alt="Instagram" ></a>
+                <a class="icon-imgy" href="https://www.Youtube.com"> <img  class="icon-img" src="/lesson5/Images/Youtube.png" alt="Youtube" ></a>
+                
+                   </div>
+                </div>
+                <iframe id="maps-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.7738534444!2d-111.91534445925853!3d42.099741626381935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20Idaho%2083263%2C%20EE.%20UU.!5e0!3m2!1ses-419!2scr!4v1590547436284!5m2!1ses-419!2scr" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
-            </div>
-            <img alt="preston-maps" id="Preston-maps" src="/lesson5/Images/Googlemaps.PNG" >
-         </section> 
+        </section>
+        </div>
       </main>
 <footer>
  &#169; <span id="year"></span> | Aldair Artiaga | San Jose | Costa Rica | <a id="link" href="https://www.byui.edu/online">BYUI Online Learning</a> <br>
  <span id="today"></span>
 </footer>
-<script src="/lesson5/Js/Nav.js"></script>
+<script src="/lesson6/Js/Nav.js"></script>
+<script src="/lesson6/Js/windchill.js"></script>
 </body>
 </html>

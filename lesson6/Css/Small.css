@@ -16,6 +16,8 @@ header {
    grid-template-rows: 50px 30px 30px auto;
    flex-flow: column;   
 }
+
+
 #alert {
    display: none;
    background-color: #F2DDA4;
@@ -69,14 +71,6 @@ header {
    margin: auto;
 }
 
- #preston{
-    width: 80%;
-
- }
-
- section map-info img{
-    width: 80px;
- }
 
  #weathersummary {
    position: absolute;
@@ -130,28 +124,50 @@ article {
    margin-top: 45px;
 }
 
-#contact-info {
-   grid-column: 1 / 5;
-   grid-row: 1;
-   padding:0 1rem;
-   text-align: center;
+
+#map{
+   background-color: #BFD7BA;
 }
-#contact-info p {
+#map-info p {
    line-height: 10px;
    text-align: center;
+   align-items: center;
 }
-.social-icons img {
-   width: 100%;
-   max-width: 25px;
-   padding-right: 1em;
+
+
+.social-icons {
+   display: grid;
+   grid-template-columns: repeat(15, 1fr);
+
    
 }
+.icon-img{
+   max-width: 30px;
+}
+.icon-imgf{
+   grid-column: 6/6;
+}
+.icon-imgi{
+   grid-column: 8/8;
+}
+.icon-imgy{
+grid-column: 10/10;
+}
+
+
+
 #google-maps {
    display: block;
    margin-left: auto;
    margin-right: auto;
    max-width: 100%;
+   align-items: center;
 }
+
+#maps-google{
+   width: 100%;
+}
+
 /*title and motto code*/
 #title {
    margin-top: 15px;
