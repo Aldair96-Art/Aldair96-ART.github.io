@@ -70,7 +70,7 @@ main {
 
  #weathersummary {
    position: absolute;
-   top: 2px;
+   top: 3px;
    left: 30px;
    width: 50%;
    font-size: .75em;
