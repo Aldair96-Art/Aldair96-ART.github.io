@@ -6,7 +6,7 @@ body {
    grid-column: 1/6;
 }
 main {
-	display: grid;
+	display: block;
 	font-size: 0.8rem;
 }
 
