@@ -90,13 +90,15 @@ main {
    width: 95%;
    margin: auto;
    position: relative;
-   grid-template-columns: repeat(2, 1fr);
+}
+#summ img {
+   width: 100%;
+}
 
-}
 #summ picture {
-   width: 80%;
-   grid-column: 1/2;
+   width: 100%;
 }
+
 
 article {
    display: grid;
