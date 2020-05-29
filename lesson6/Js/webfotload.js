@@ -1,1 +1,5 @@
-WebFont.load({google: {families: ["Ubuntu"]}});
+WebFont.load({
+    google: {
+      families: ['Lato', 'sans-serif']
+    }
+  });

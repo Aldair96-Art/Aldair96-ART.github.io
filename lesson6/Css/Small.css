@@ -156,15 +156,6 @@ grid-column: 10/10;
 }
 
 
-
-#google-maps {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   max-width: 100%;
-   align-items: center;
-}
-
 #maps-google{
    width: 100%;
 }
