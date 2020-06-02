@@ -1,0 +1,282 @@
+body {
+   font-family: 'Lato', sans-serif;
+   font-size: 14px;
+   background-color: #ffffff;
+   width: 100%;
+   grid-column: 1/6;
+}
+main {
+	display: block;
+	font-size: 0.8rem;
+}
+
+
+
+
+
+#alert {
+   display: none;
+   background-color: #F2DDA4;
+   color: black;
+   text-align: center;
+   padding: 5px;
+   font-weight: bold;
+}
+
+#pancakebanner {
+   background-color: #F2DDA4;
+   color: #00001e;
+   margin: 0;
+   padding: 10px 0;
+   text-align: center;
+}
+
+ h1,h2,#title,#motto {
+   font-family: 'Lato', sans-serif;
+
+ }
+
+ h2{
+   font-size: 2.5em;
+   margin: 0.15rem;
+   text-align: center;
+   padding: 10px;
+ }
+
+ 
+ h3 {
+   font-family: sans-serif;
+   font-size: medium;
+   text-align: center;
+}
+
+ h1, #title {
+    font-size: 1.5em;
+ }
+ 
+ h2, #motto {
+    font-size: 1.1em;
+ }
+ header {
+    display: grid;
+      
+ }
+ 
+ main {
+   max-width: 900px;
+   margin: auto;
+}
+
+
+ #weathersummary {
+   position: absolute;
+   top: 10px;
+   left: 30px;
+   width: 50%;
+   font-size: .75em;
+   background-color: white;
+   padding: 10px;
+   background:#F2DDA4;
+   box-shadow: 0 0 30px #111;
+   background: linear-gradient(160deg, rgba(237,242,245,1) 0%,#BFD7BA 73%);
+   text-align: center;
+}
+
+#weathersummary p {
+   font-size: 1.3em ;
+
+}
+ #summ {
+   width: 95%;
+   margin: auto;
+   position: relative;
+}
+#summ img {
+   width: 100%;
+}
+
+#summ picture {
+   width: 100%;
+}
+
+
+article {
+   display: grid;
+   margin-top: 15px;
+   grid-template-columns: 3fr;
+   grid-column: 1/3;
+   margin-top: 15px;
+   padding: 15px;
+}
+
+#Dayforec{
+   display: none;
+}
+
+#imagcache{
+   border: 1px solid #ccc;
+   padding: 1px;
+   box-shadow: 5px 5px 5px #999;
+
+}
+
+#imagcache {
+   width: 100%;
+   margin-top: 45px;
+}
+
+
+#map{
+   background-color: #BFD7BA;
+}
+#map-info p {
+   line-height: 10px;
+   text-align: center;
+   align-items: center;
+}
+
+
+.social-icons {
+   display: grid;
+   grid-template-columns: repeat(15, 1fr);
+
+   
+}
+.icon-img{
+   max-width: 30px;
+}
+.icon-imgf{
+   grid-column: 6/6;
+}
+.icon-imgi{
+   grid-column: 8/8;
+}
+.icon-imgy{
+grid-column: 10/10;
+}
+
+
+#maps-google{
+   width: 100%;
+}
+
+/*title and motto code*/
+#title {
+   margin-top: 15px;
+   grid-column: 2/4;
+   grid-row: 1;
+   text-align: center;
+   color:black;
+}
+#motto {
+   margin-top: 5px;
+   grid-column: 2/4;
+   grid-row: 2;
+   text-align: center;
+   color: black;
+}
+
+#colors {
+   width: 100%;
+}
+/*/////////////////////*/
+
+ /*Navigation Code */
+ nav{
+   background: #3f4c6b;
+   background: -moz-linear-gradient(left,  #3f4c6b 0%, #a3c4bc 51%, #3f4c6b 100%);
+   background: -webkit-linear-gradient(left,  #3f4c6b 0%,#a3c4bc 51%,#3f4c6b 100%);
+   background: linear-gradient(to right,  #3f4c6b 0%,#a3c4bc 51%,#3f4c6b 100%); 
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#3f4c6b',GradientType=1 );
+   
+   }
+ nav {
+    grid-column: 1/6;
+    grid-row: 4;
+    margin-bottom: 20px;
+ }
+ nav ul { 
+    list-style: none;
+    margin: 0 auto;
+    text-align: center;
+    grid-row: 4;
+    grid-column: 1/6;
+ }
+ nav li {
+    border: solid thin rgba(0,0,0,.33);
+    margin-bottom: 2px;
+    background-color: #413c58;
+ }
+ 
+ nav li a {
+    padding: 10px 0 10px 0;
+    display: block;
+    text-decoration: none;
+    color: white;
+ }
+ 
+ nav li a:hover {
+    font-weight: bold;
+    color: #F2DDA4;
+ }
+ nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav_hidden {
+   display: none;
+}
+
+  /*/////////////////////*/
+ 
+
+ /*button*/
+
+ #menu_button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    margin-left: 7em;
+ }
+ 
+
+ .active {
+    background-color:  #a3c4bc;
+    color: #413c58;
+    font-weight: bold;
+ }
+ .active:hover {
+    color: #FFFF;
+ }
+ 
+/*Title code */
+ 
+ #logo1 {
+   width: 100px;
+   grid-column: 1/3;
+   grid-row: 1/4;
+   padding: 10px;
+}
+
+/* footer code*/
+ footer {
+   background-color:#413c58;
+   color:#FBFBFB;
+   text-align:center;
+   padding:20px;  
+   max-width: 900px;
+   margin: auto;
+}
+#link {
+   color:white;
+}
+#today {
+   display: block;
+   margin-top:8px;
+}
+
+#updated {
+   color: white;
+}
