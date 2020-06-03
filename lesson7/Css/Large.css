@@ -99,6 +99,38 @@
 #maps-google{
    width: 100%;
 }
+/*/////////////////*/
 
+img[data-src] {
+   filter: blur(0.2em);
+ }
+ 
+ img {
+   filter: blur(0em);
+   transition: filter 1s;
+ }
 
-}
+ .fade_in {
+   visibility: visible;
+   opacity: 1;
+   transition: opacity, .25s linear; 
+ }
+ .fade_out {
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0s .25s, opacity .25s linear;   
+ }
+ .gallery-img {
+   width: 100%
+   padding 25px;
+ }
+
+ #gallery {
+   grid-template-columns: 1fr 1fr 1fr;
+    }
+ }
+
+ #gallery figure:hover {
+   box-shadow: 0 0 50px #F2DDA4;
+ }
+

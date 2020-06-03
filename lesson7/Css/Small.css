@@ -280,3 +280,28 @@ grid-column: 10/10;
 #updated {
    color: white;
 }
+/*////////////////////*/
+
+.fade_in {
+   visibility: visible;
+   opacity: 1;
+   transition: opacity, .25s linear; 
+ }
+ .fade_out {
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0s .25s, opacity .25s linear;   
+ }
+ .gallery-img {
+   width: 100%
+ }
+
+ #gallery {
+   display:grid;
+   grid-template-columns: 1fr;
+   gap: 20px;
+ }
+
+ div figcaption{
+    text-align: center;
+ }
