@@ -1,0 +1,115 @@
+@media only screen and (min-width: 800px) { 
+   h1 {
+      font-size: 1.75em;
+   }
+   h2, #motto {
+      font-size: 1.25em;
+   }
+   header {
+      grid-template-columns: 1fr 200px 300px 200px 1fr;
+      grid-template-rows: 40px 40px 40px 60px;  
+   }
+   nav {
+      grid-column: 1 / 6;
+   }
+   nav ul {
+      display: flex;
+   }
+   nav li {
+      flex: 1 1 100%;
+      border: none;
+      margin: 0px;
+   }
+   nav li a:hover {
+      transform: scale(1.1);
+   }
+   #content {
+      max-width: 900px;
+      margin: auto;
+   }
+   #logo1 {
+       width: 100px;
+       grid-column: 2/3;
+       grid-row: 1/4;
+       padding: 10px;
+    }
+   
+   #menu_button {
+      display: none;
+   }
+   #motto {
+      grid-column: 3;
+   }
+   
+   #title {
+      grid-column: 3;
+   }
+   .nav_hidden {
+      display: flex;
+   }
+   #title {
+      font-size: 2em;
+   }
+   #Dayforec {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: #BFD7BA;
+     color: #F3E9D2;
+     margin: 2rem;
+     padding-bottom: 1.5rem;
+     grid-row: 2/3;
+  }
+  
+  #Dayforec h3 {
+     color: #413c58;
+  }
+  
+  table {
+     border-collapse: collapse;
+     box-shadow: 0 0 30px #F2DDA4;
+  }
+  
+  th, td {
+     padding: 1rem;
+     text-align: center;
+  }
+  
+  table, th, td{
+     border: 2px solid #F3E9D2;
+     background-color: #413c58;
+  }
+
+  article {
+   display: grid;
+   grid-template-columns: 3fr 2fr;
+   margin-top: 15px;
+   padding: 15px;
+}
+
+  #imagcache {
+     width: 100%;
+     margin-top: 15px;
+  }
+  .table-icon {
+   width: 25px;
+}
+
+#map-info p {
+   line-height: 10px;
+   text-align: center;
+   align-items: center;
+}
+
+#summ picture {
+   width: 100%;
+}
+
+#maps-google{
+   width: 100%;
+}
+
+
+}
+
