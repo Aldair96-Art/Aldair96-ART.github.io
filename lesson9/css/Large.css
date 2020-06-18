@@ -17,88 +17,8 @@
    padding: 15px;
 }
 
-#summ picture {
-   width: 100%;
-}
 
-/*forectast*/
-   
-#Dayforec {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   background-color: #BFD7BA;
-   color: #F3E9D2;
-   margin: 2rem;
-   padding-bottom: 1.5rem;
-}
 
-  
-  table {
-      border-collapse: collapse;
-      box-shadow:0 0 30px #F2DDA4;
-  }
-  
-  table, th, td{
-      border: 2px solid #F3E9D2;
-      background-color: #114B5F;
-  }
-  
-  th, td {
-      padding: 1rem;
-      text-align: center;
-  }
-
-  #Dayforec img {
-   width: 100%;
-   max-width: 55px;
-   padding-right: 1em;
-   
-}
-
-  /*contact info*/
-  
-  #map {
-   display: flex;
-   padding: 15px;
-   margin: auto;
-   background-color: #BFD7BA;
-   box-shadow: #114B5F;
-   align-items: center;
-}
-
-#map-pic {
-   margin-top: 0;
-   margin: auto;
-   display: flex;
-}
-
-#google-maps {
-
-   display: block;
-   max-width: 80%;
-   height: 300px;
-   padding: 25px;
-   
-   
-}
-
-#article {
-   padding: 25px;
-
-}
-
-.social-icons img {
-   width: 100%;
-   max-width: 25px;
-   padding-right: 1em;
-   align-content: center;
-}
-
-#maps-google{
-   width: 100%;
-}
 /*/////////////////*/
 
 img[data-src] {
@@ -110,16 +30,6 @@ img[data-src] {
    transition: filter 1s;
  }
 
- .fade_in {
-   visibility: visible;
-   opacity: 1;
-   transition: opacity, .25s linear; 
- }
- .fade_out {
-   visibility: hidden;
-   opacity: 0;
-   transition: visibility 0s .25s, opacity .25s linear;   
- }
  .gallery-img {
    width: 100%
    padding 25px;

@@ -188,139 +188,40 @@ main {
    color: white;
 }
 
-/*--/Form----*/
+Home Page
+*********************/
 
-form {
-   background-color:#ffffff;
-   padding: 1.5em;
-   margin: 1em 0;
-   border-radius: 10px;
-   box-shadow: 0 0 25px #114B5F;
+#towns {
+  display:grid;
+  grid-template-columns: 1fr;
 }
 
-form fieldset {
-   margin-top: 2rem;
-   margin-left: auto;
-   margin-right: auto;
-   border: 3px solid #114B5F;
-   border-radius: 5px;
-   color: #114B5F;
-   width: 90%;
-   max-width: 30rem;
+#towns h2 {
+  text-align: center;
+  font-size: 2.5em;
+  padding-bottom: 0;
+  margin-bottom: -10px;
+}
+#towns h4 {
+  text-align: center;
+  font-size: 1.5 em;
+}
+#towns h5 {
+  text-align: center;
+  font-size: 1.2 em;
+  font-style: italic;
+}
+#towns section {
+  display:grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 15px;
+}
+#towns img {
+  width: 100%;
 }
 
-form legend {
-   margin: 0 1rem;
-   padding: 0 .5rem;
-   font-size: 1.5rem;
-}
-
-form label.form {
-   display: block;
-   padding-top: .25rem;
-   padding-bottom: 1rem;
-   font-size: 1rem;
-}
-
-form div {
-   display: block;
-   padding-top: .25rem;
-   font-size: 1rem;
-}
-
-form label.form input, 
-form label.form select, 
-textarea
-{
-   display: block;
-   font-size: 1rem;
-   background-color: #F2DDA4;
-   color: #555;
-   border: solid 1px #999;
-   border-radius: 2px;
-   padding: .75rem;
-   width: 90%;
-   max-width: 20rem;
-   
-}
-
-.range {
-   font-size: 1rem;
-}
-
-#rangeValue {
-   font-size: 1.25rem;
-   padding-left: 1rem;
-}
-
-.range input {
-   display: block;
-   border: none;
-   width: 21.75rem;
-   margin-bottom: .5rem;
-}
-
-form label.danger{
-   display: block;
-   font-size: 1rem;
-}
-
-.sbs input {
-   margin-right: .5rem;
-}
-
-form input.SubmittButton {
-   background-color: #BFD7BA; 
-   border: none;
-   color: rgb(0, 0, 0);
-   padding: 15px 32px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 4px 2px;
-   cursor: pointer;
-   -webkit-transition-duration: 0.4s; 
-   transition-duration: 0.4s;
-   width: 100%;
-}
-
-#Button {
-   border: none;
-   margin: 1rem auto;
-   padding-left: 0;
-}
-
-textarea {
-   min-height: 10rem;
-}
-
-form label.form input:required {
-   border-left: red solid 5px;
-}
-
-form label.form input:required:valid {
-   border-left: none;
-}
-
-input:focus {
-  box-shadow: 0 0 10px #ccc;
-}
-
-/**thanks.html**/
-
-#message{
-   background-color: #BFD7BA; 
-   border: none;
-   color: rgb(0, 0, 0);
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 4px 2px;
-   cursor: pointer;
-   -webkit-transition-duration: 0.4s; 
-   transition-duration: 0.4s;
-   width: 100%;
+.towns_detail {
+  width: 100%;
+  background-color: rgb(200, 200, 200);
 }
 
