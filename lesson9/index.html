@@ -22,20 +22,22 @@
         
          <button onclick="toggle_nav()" id="menu_button">&#9776;Menu</button>
          <ul id="main_nav" class="nav_hidden">
-            <li><a class="active" title="Home" href="./">Home</a></li>
-            <li><a class=""       title="Preston" href="/lesson7/Preston-7.html">Preston</a></li>
+            <li><a class="active" title="Home" href="/lesson9/index.html">Home</a></li>
+            <li><a class="Preston"title="Preston" href="/lesson6/Preston-6.html">Preston</a></li>
             <li><a title="" href="">Soda Springs</a></li>
             <li><a title="" href="">Fish Haven</a></li>
-            <li><a title="Storm-center" href="/lesson9/stormcenter.html">Storm Center</a></li>
-            <li><a title="" href="./gallery-7.html">Gallery</a></li>
+            <li><a title="Storm-center" href="/lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a title="Gallery" href="/lesson7/gallery-7.html">Gallery</a></li>
          </ul>
       </nav>
    </header>
-   <main id="towns">
-
-
+   <div><h2> Welcome to Real-time Weather </h2></div>
+   <main id="Town">
+       <!--Here is where the JSON Data is reflected///-->
+      
    </main>
-   <div class="center"><a id="wireframes" href="./wireframes.html" target="_blank">Wireframes</a></div>
+
+<div class="wire"><a id="Wireframes-index" href="./wireframes.html" target="_blank">Wireframes</a></div>
 
    <footer>
     &#169; <span id="year"></span> | Aldair Artiaga | San Jose | Costa Rica | <a id="link" href="https://www.byui.edu/online">BYUI Online Learning</a> <br>
@@ -43,6 +45,9 @@
    </footer>
    <script src="/lesson9/Js/Site.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+   <script >
+        ldahoTowns();
+   </script>
    </body>
    </html>
 

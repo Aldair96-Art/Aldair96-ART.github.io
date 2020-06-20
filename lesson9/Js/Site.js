@@ -26,7 +26,7 @@ else {
     document.getElementById("severityrange").innerHTML = rate;
 }
 
-function loadTowns() {
+function ldahoTowns() {
     const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
  
     fetch(requestURL)
@@ -60,11 +60,11 @@ function loadTowns() {
  function buildTownCard(town, prefix) {
     let section = document.createElement('section');
     let divDetail = document.createElement('div')
-    divDetail.setAttribute('class', 'city_home town_detail')
+    divDetail.setAttribute('class', 'Idahocity')
     divDetail.setAttribute('id', prefix + '_text');
     let image = document.createElement('img');
     image.setAttribute('src', './images/' + town.photo);
-    image.setAttribute('class', 'city_home city_image');
+    image.setAttribute('class', 'Idaho City');
     image.setAttribute('alt', town.name)
     image.setAttribute('id', prefix + '_image');
     let name = document.createElement('h2');
