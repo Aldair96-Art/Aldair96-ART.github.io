@@ -35,7 +35,7 @@ function ldahoTowns() {
     divDetail.setAttribute('class', 'Idahocity')
     divDetail.setAttribute('id', prefix + '_text');
     let image = document.createElement('img');
-    image.setAttribute('src', './images/' + town.photo);
+    image.setAttribute('src', 'images/' + town.photo);
     image.setAttribute('class', 'Idaho City');
     image.setAttribute('alt', town.name)
     image.setAttribute('id', prefix + '_image');
