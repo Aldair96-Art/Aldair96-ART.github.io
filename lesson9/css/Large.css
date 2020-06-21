@@ -125,32 +125,27 @@ img[data-src] {
  }
  
 
- #Town {
-   display:grid;
+ 
+/*homepage*/
+div.Town{
+   display: grid;
    grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   background-color: #413c58;
 }
-#Town section {
-   grid-template-columns: 1fr;
-   padding: 0 10px;
+div.Town section{
+   display: flex;
+   flex-direction: column;
+   margin-top: 1em;
+   margin-bottom: 1em;
 }
-.city_detail {
-   width: 100%;
-   min-height: 200px;
-   border-radius: 10px 10px 0 0;
+
+section:nth-child(even) img{
+   grid-column: 2;
 }
-.city_detail h4 {
-   font-style: italic;
-}
-.city_detail h4, .city_detail p  {
-   padding: 0 10px;
-}
-#sp_text {
+section:nth-child(even) .townData{
    grid-column: 1;
    grid-row: 1;
-}
-#sp_image {
-   grid-column: 1;
-   grid-row: 2;
 }
 
 

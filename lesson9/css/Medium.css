@@ -109,20 +109,23 @@
 #maps-google{
    width: 100%;
 }
-/**homepage**/
+ /*CSS for Home Page in Medium View*/
 
-   #Town section {
-      grid-template-columns: 1fr 1fr;
-   }
-
-   #sp_text {
-      grid-column: 2;
-      grid-row:2;
-   }
-   #sp_image {
-      grid-column: 1;
-      grid-row:2;
-   }
+ div.Town section{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr;
+}
+div.townData p:nth-of-type(1){
+   font-size: 0.85rem;
+}
+section:nth-child(even) img{
+   grid-column: 1;
+}
+section:nth-child(even) .citiesData{
+   grid-column: 2;
+   grid-row: 1;
+}
    
    
 }

@@ -1,61 +1,42 @@
-function ldahoTowns() {
-    const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
- 
-    fetch(requestURL)
+const requestURL = 'https:////byui-cit230.github.io/weather/data/towndata.json';
+fetch(requestURL)
     .then(function (response) {
-       return response.json();
+        return response.json();
     })
     .then(function (jsonObject) {
-       const towns = jsonObject['towns'];
-       let preston;
-       let sodasprings;
-       let fishhaven;
-       for (let i = 0; i < towns.length; i++ ) {
-        switch (towns[i].name) {
-        case "Preston":
-                preston = buildTownCard(towns[i], 'p');
-              break;
-        case "Soda Springs":
-                sodasprings = buildTownCard(towns[i], 'sp');
-              break;
-        case "Fish Haven":
-                fishhaven = buildTownCard(towns[i], 'fh');
-              break;
-          }
-       }
-       document.querySelector('main').appendChild(preston);
-       document.querySelector('main').appendChild(sodasprings);
-       document.querySelector('main').appendChild(fishhaven);
+        const towns = jsonObject['towns'];
+        towns.forEach(town => {
+            if (town.name == "Fish Haven" || town.name == "Preston" || town.name == "Soda Springs"){
+                let card = document.createElement('section')
+                let div = document.createElement('div')
+                let h2 = document.createElement('h2');
+                let p1 = document.createElement('p');
+                let p2 = document.createElement('p');
+                let p3 = document.createElement('p');
+                let p4 = document.createElement('p');
+                let image = document.createElement('img');
+                let link = document.createElement('a');
+                let textLink = document.createElement('p');
+
+                div.setAttribute('class', 'citiesData')
+                h2.textContent = town.name;
+                p1.textContent = town.motto;
+                p2.textContent = "Year Founded: " + town.yearFounded;
+                p3.textContent = "Population: " + town.currentPopulation;
+                p4.textContent = "Annual Rain Fall: " + town.averageRainfall;
+                image.setAttribute('src', `images/${town.photo}`);
+                image.setAttribute('alt', town.name);
+
+                div.appendChild(h2);
+                div.appendChild(p1);
+                div.appendChild(p2);
+                div.appendChild(p3);
+                div.appendChild(p4);
+                card.appendChild(div);
+                card.appendChild(image);
+
+                document.querySelector('div.Town').appendChild(card);
+            }
+        });
+
     });
- }
- 
- function buildTownCard(town, prefix) {
-    let section = document.createElement('section');
-    let divDetail = document.createElement('div')
-    divDetail.setAttribute('class', 'Idahocity')
-    divDetail.setAttribute('id', prefix + '_text');
-    let image = document.createElement('img');
-    image.setAttribute('src', 'images/' + town.photo);
-    image.setAttribute('class', 'Idaho City');
-    image.setAttribute('alt', town.name)
-    image.setAttribute('id', prefix + '_image');
-    let name = document.createElement('h2');
-    name.textContent = town.name;
-    let motto = document.createElement('h5');
-    motto.textContent = town.motto;
-    let yearFounded = document.createElement('h4');
-    yearFounded.textContent = 'Year Founded: ' + town.yearFounded;
-    let currentPopulation = document.createElement('h4');
-    currentPopulation.textContent = 'Population: ' + town.currentPopulation;
-    let averageRainfall = document.createElement('h4');
-    averageRainfall.textContent = 'Annual Rain Fall: ' + town.averageRainfall;
- 
-    divDetail.appendChild(name);
-    divDetail.appendChild(motto);
-    divDetail.appendChild(yearFounded);
-    divDetail.appendChild(currentPopulation);
-    divDetail.appendChild(averageRainfall);
-    section.appendChild(divDetail);
-    section.appendChild(image);
-    return section;
- }
