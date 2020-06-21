@@ -24,7 +24,7 @@ fetch(requestURL)
                 p2.textContent = "Year Founded: " + town.yearFounded;
                 p3.textContent = "Population: " + town.currentPopulation;
                 p4.textContent = "Annual Rain Fall: " + town.averageRainfall;
-                image.setAttribute('src', `images/${town.photo}`);
+                image.setAttribute('src', `./images/${town.photo}`);
                 image.setAttribute('alt', town.name);
 
                 div.appendChild(h2);
@@ -40,3 +40,4 @@ fetch(requestURL)
         });
 
     });
+    
