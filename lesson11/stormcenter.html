@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Week 08-Storm Center">
+  <title>Real Time Weather</title>
+  <link rel="stylesheet" href="./css/Small.css">
+  <link rel="stylesheet" href="./css/Medium.css">
+  <link rel="stylesheet" href="./css/Large.css">
+  <link rel="stylesheet" href="./css/Normalize.css">
+  <link rel="ICON" href="/lesson7/Images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header>
+      <img id="logo1" alt="Logo" src="/Images/logo1.png">
+      <h1  id="title">Real Time Weather</h1>
+      <h2  id="motto">Always aware of time</h2>
+      <nav>
+        <button onclick="toggle_nav()" id="menu_button">&#9776;Menu</button>
+        <ul id="main_nav" class="nav_hidden">
+           <li><a title="homesite" href="./index.html">Home</a></li>
+           <li><a title="Preston" href="./Preston.html">Preston</a></li>
+           <li><a title="" href="">Soda Springs</a></li>
+           <li><a title="" href="">Fish Haven</a></li>
+           <li><a class="active" title="Storm Center" href="./stormcenter.html">Storm Center</a></li>
+           <li><a title="Gallery" href="./gallery.html">Gallery</a></li>
+        </ul>
+     </nav>
+  </header>
+    <main>
+        <h2>Enter the below information to report the storm</h2>
+        <form method="get" action="Thanks.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="form">Full Name <input type="text" name="fullname" id="fullname" title="Must be at least 3 characters" pattern="^[a-zA-Z\s\.\-]{3,}$" required></label>
+                <label class="form">Email <input type="email" name="email" placeholder="user@gmail.com"></label>
+                <label class="form">Phone <input type="tel" name="phone" placeholder="+111-111-1111" required></label>
+                <label class="form">Zip Code <input type="number" name="zip" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Information</legend>
+                <label class="form">Storm Date <input type="date" name="completeDate"></label>
+                <label class="form" id="stormList">Storm Type <input list="storms" name="stormList"></label>
+                <datalist id="storms">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+
+               <label class="range">Storm Severity <span id="severityrange">5</span><input type="range" name="StormRange" value="5" min="0" max="10" step="1" list="ticks" oninput=" SeverityRange(this.value)" onchange=" SeverityRange(this.value)"></label>
+                <label class="form">Storm Region
+                    <select name="region">
+                        <option value="" disabled selected>Please Select</option>
+                        <option value="region">Preston</option>
+                        <option value="region">Soda Springs</option>
+                        <option value="region">Fish Haven</option>
+                    </select>
+                </label>
+                <div>User Danger Level:</div>
+                <label class="danger"><input type="radio" name="danger" value="yes">   Yes</label>
+                <label class="danger"><input type="radio" name="danger" value="maybe">   Maybe</label>
+                <label class="danger"><input type="radio" name="danger" value="no">     No</label>
+
+
+                <label class="form">Enter Comments Here:<textarea name="comments"></textarea></label>
+            </fieldset>
+
+            <fieldset id="Button">
+            <input type="submit" value="Report Weather" class="SubmittButton">
+            </fieldset>
+        </form>
+
+    </main>
+  <footer>
+    &#169; <span id="year"></span> | Aldair Artiaga | San Jose | Costa Rica | <a id="link" href="https://www.byui.edu/online">BYUI Online Learning</a> <br>
+    <span id="today"></span>
+   </footer>
+   <script src="/lesson8/Js/Nav.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+   <script src="/lesson7/Js/webfotload.js"></script>
+   </body>
+   </html>
+   
