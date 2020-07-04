@@ -447,4 +447,10 @@ div.Town img{
 
 }
 
-
+#weather-events {
+   border: solid thin #413c58;
+   font-size: 1.1em;
+   margin: 20px 0;
+   padding: 10px 20px 20px 20px;
+   text-align: center;
+}
