@@ -47,29 +47,24 @@ fetch(forecastURL)
     });
 
 
-    let townName = "Preston";
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-fetch(requestURL)
-    .then(function(response) {
+    function TEvents(town) {
+        const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+     
+     fetch(requestURL)
+      .then(function (response) {
         return response.json();
-    })
-    .then(function(jsonObject) {
+      })
+      .then(function (jsonObject) {
         const towns = jsonObject['towns'];
-        towns.forEach(town => {
-            if (town.name == townName) {
-                const events = town.events;
-                let div1 = document.createElement('div');
-                let h3 = document.createElement('h3');
-                let hr = document.createElement('hr');
-                h3.innerHTML = `${town.name} Events:`;
-                div1.appendChild(h3);
-                div1.appendChild(hr);
-                events.forEach(event => {
-                    let p =document.createElement('p');
-                    p.textContent = event;
-                    div1.appendChild(p);
-                });
-                document.getElementById('weather-events').appendChild(div1);
+        for (let i = 0; i < towns.length; i++ ) {
+            if (towns[i].name == town) {
+                let events = towns[i].events;
+                for (let i=0; i < events.length; i++) {
+                    let event = document.createElement('p');
+                    event.innerHTML = events[i];
+                    document.querySelector('#weather-events').appendChild(event);
+                }
             }
-        });
-    });
+        }
+     });
+     }

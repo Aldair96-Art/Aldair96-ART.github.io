@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Week-10 Preston Idaho-API">
+  <meta name="description" content="Week-10 Fish Haven">
   <title>Real Time Weather</title>
   <link rel="stylesheet" href="./css/Small.css">
   <link rel="stylesheet" href="./css/Medium.css">
@@ -22,22 +22,22 @@
          <button onclick="toggle_nav()" id="menu_button">&#9776;Menu</button>
          <ul id="main_nav" class="nav_hidden">
             <li><a title="Home" href="./index.html">Home</a></li>
-            <li><a class="active" title="Preston" href="./Preston.html">Preston</a></li>
+            <li><a title="Preston" href="./Preston.html">Preston</a></li>
             <li><a title="soda" href="./sodasprings.html">Soda Springs</a></li>
-            <li><a title="fish" href="./fishhaven.html">Fish Haven</a></li>
-            <li><a title="stormcenter" href="./stormcenter.html">Storm Center</a></li>
-            <li><a title="Gallery" href="./gallery.html">Gallery</a></li>
+            <li><a  class="active" title="Fish Haven" href="">Fish Haven</a></li>
+            <li><a title="" href="./stormcenter.html">Storm Center</a></li>
+            <li><a title="" href="./gallery.html">Gallery</a></li>
          </ul>
       </nav>
    </header>
    <main>
-      <h2>Preston Idaho</h2>
+      <h2>Fish Haven</h2>
         <section id="summ">
               <picture>
-                 <source id="400" media="(max-width: 400px)" srcset="./images/preston/preston-400.jpg">
-                 <source id="800" media="(max-width: 800px)" srcset="./images/preston/preston-800.jpg">   
+                 <source id="400" media="(max-width: 400px)" srcset="./images/Fishhaven/fish-haven-400px.jpg">
+                 <source id="800" media="(max-width: 800px)" srcset="./images/Fishhaven/fish-haven-800.jpg">   
 
-                 <img src="./images/preston/preston-1200.jpg" alt="prest">
+                 <img src="./images/Fishhaven/fish-haven-1200px.jpg" alt="Fish">
             </picture>
             <div id="weathersummary">
                 <h3>Weather Summary</h3>
@@ -74,11 +74,12 @@
 
         <article>
             <div id="artcontent">
-               <h3>Spring Season</h3>
-               <p>Preston Idaho, it has a relevant weather during Spring season, usually deal with a max average of t°: 75 °F (+24 °C) and min average t°: 55 °F (+13 °C), Also Sundial in the day: 8 hours, Rainy days: 9 days and Precipitation: 4.1" (105 mm)</p>
-            <p>The weather can be affected because there is a variation of sun and raining but places like Cache National Forest and Cornish Park become an attractive place for visit in Spring.</p>
+               <h3>What is Bear Lake famous for?</h3>
+               <p>The lake is renowned for its beautiful turquoise color and its attractiveness to tourists. The lake was known to numerous Native American groups who came into the Bear Lake Valley during the summers, and from them it received its name.</p>
+            <p>Bear Lake became a resort and recreation area, and that aspect has grown through the years with developers attempting to sell lakeshore and mountain view lots.</p>
+            <p>Take a look our site to review in real time the weather!</p>
             </div>
-            <img alt="Preston Winter" id="imagcache" src="/lesson11/images/preston/cache.jpg">
+            <img alt="Preston Winter" id="imagcache" src="/lesson11/images/Fishhaven/bear_lake.jpg">
          </article>
             
          <section id="map">
@@ -95,7 +96,7 @@
                 <a class="icon-imgy" href="https://www.Youtube.com"> <img  class="icon-img" src="/lesson6/Images/Youtube.png" alt="Youtube" ></a>
                    </div>
                 </div>
-                <iframe id="maps-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.7738534444!2d-111.91534445925853!3d42.099741626381935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20Idaho%2083263%2C%20EE.%20UU.!5e0!3m2!1ses-419!2scr!4v1590547436284!5m2!1ses-419!2scr" width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe id="maps-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11852.9588305052!2d-111.40486806393983!3d42.03803991735512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20Idaho%2083287%2C%20EE.%20UU.!5e0!3m2!1ses-419!2scr!4v1593923713257!5m2!1ses-419!2scr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </section>
         </div>
@@ -106,9 +107,9 @@
 </footer>
 <script src="/lesson11/Js/Nav.js"></script>
 <script src="/lesson11/Js/windchill.js"></script>
-<script src="/lesson11/Js/Preston.js"></script>
+<script src="/lesson11/Js/fishhavensdata.js"></script>
 <script>
-    TEvents("Preston")
+    TEvents("Fish Haven")
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script src="/lesson11/Js/webfotload.js"></script>

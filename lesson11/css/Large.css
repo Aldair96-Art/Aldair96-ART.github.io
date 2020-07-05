@@ -78,7 +78,7 @@ table tbody {
    display: flex;
 }
 
-#google-maps {
+#maps-google {
 
    display: block;
    max-width: 80%;
@@ -88,6 +88,12 @@ table tbody {
    
 }
 
+#contact-title{
+   grid-column: 1 / 3;
+   grid-row: 1;
+   padding: 25px;
+
+}
 #article {
    padding: 25px;
 
