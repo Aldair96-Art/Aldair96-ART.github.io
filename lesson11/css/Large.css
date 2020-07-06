@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 900px) {
    h1  {
       font-size: 2.25em;
    }
@@ -121,6 +121,8 @@ img[data-src] {
  }
 
 
+ }
+
  .gallery-img {
    width: 100%
    padding 25px;
@@ -129,12 +131,12 @@ img[data-src] {
  #gallery {
    grid-template-columns: 1fr 1fr 1fr;
     }
- 
+ }
 
  #gallery figure:hover {
    box-shadow: 0 0 50px #F2DDA4;
  }
- 
+
 
  
 /*homepage*/

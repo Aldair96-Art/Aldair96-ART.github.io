@@ -96,6 +96,9 @@
    width: 25px;
 }
 
+#gallery {
+   grid-template-columns: 1fr 1fr;
+ }
 
 
 #map-info p {
