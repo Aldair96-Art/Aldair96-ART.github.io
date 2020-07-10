@@ -1,4 +1,6 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?lat=42.0381059&lon=-111.400535&units=imperial&APPID=4a32e867e085eb3d905c18e7e6de00d4";
+const weathercity = (coo,cities_name) => {
+const urlRequest = "https://byui-cit230.github.io/weather/data/towndata.json";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id="+coo+"&units=imperial&APPID=4a32e867e085eb3d905c18e7e6de00d4";
 fetch(apiURL)
 .then((response) => response.json())
 .then((weather) => {
@@ -24,7 +26,7 @@ fetch(apiURL)
 });
 
 //Forecast//
-const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?lat=42.0381059&lon=-111.4005351&units=imperial&APPID=4a32e867e085eb3d905c18e7e6de00d4";
+const forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id="+coo+"&units=imperial&APPID=4a32e867e085eb3d905c18e7e6de00d4";
 fetch(forecastURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -47,24 +49,22 @@ fetch(forecastURL)
             d++;
         });
     });
-    function TEvents(town) {
-        const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-     
-     fetch(requestURL)
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (jsonObject) {
-        const towns = jsonObject['towns'];
-        for (let i = 0; i < towns.length; i++ ) {
-            if (towns[i].name == town) {
-                let events = towns[i].events;
-                for (let i=0; i < events.length; i++) {
-                    let event = document.createElement('p');
-                    event.innerHTML = events[i];
-                    document.querySelector('#weather-events').appendChild(event);
-                }
+    
+    fetch(urlRequest).then(res=>res.json())
+    .then(Eventdata=>
+        {
+
+        var Events=document.getElementById("weather-events");
+
+        var town = Eventdata.towns.filter(town => town.name==cities_name)[0];
+
+        for (var i = 0; i < town.events.length; i++) {
+
+            var p = document.createElement("p");
+            p.textContent=town.events[i];
+            Events.append(p);
             }
-        }
-     });
-     }
+    })
+    }
+      
+    
