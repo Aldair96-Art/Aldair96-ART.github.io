@@ -11,18 +11,3 @@ function toggle_nav() {
  document.getElementById("today").innerHTML = dayName + ', ' + date.getDate() + ' ' + monthName  + ' ' + year;
  document.getElementById("year").innerHTML = year;
 
- var d = new Date();
-const banner = document.getElementById("banner");
-if (d.getDay() == 5) {
-    pancakebanner.setAttribute("style", "display: block");
-}
-else {
-    pancakebanner.setAttribute("style", "display: none"); 
-}
-
-
-
- function SeverityRange(rate) {
-    document.getElementById("severityrange").innerHTML = rate;
-}
-
