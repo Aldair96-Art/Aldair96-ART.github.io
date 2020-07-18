@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">  
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scoots</title>
+    <link rel="stylesheet" href="./css/Small.css">
+    <link rel="stylesheet" href="./css/Medium.css">
+    <link rel="stylesheet" href="./css/Large.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
+    
+ </head>
+    <body> 
+
+     <header class="headerS">
+      <div class="logo"><a href="./home.html"><img alt="website logo" src="./images/scoots-icon.png"></a></div>
+                <h1 id="title">~Scoots</h1>
+                <h2 id="motto">Variety,vacations and accesibiliy!</h2>
+           <nav>
+               <ul class="main-nav" id="nav-id"></ul>
+                <li><a class="active" title="Home" href="./home.html">Home</a></li>
+                <li><a title="Rentals" href="./Rentals.html">Rentals</a></li>
+                <li><a title="Reservations" href="./Reservations.html">Reservations</a></li>
+                <li><a title="Tour" href="">Tour</a></li>
+                <li><a title="Contact" href="">Contact</a></li>
+               </ul>
+           </nav>
+             
+    </header>
+
+    <main class="content">
+
+
+         <section >
+            <div id="advertising">
+               <h1>Perfect Experience from beginning to End!</h1>
+            </div>
+            </section>
+
+            <article>
+               
+               <div id="artcontent"> 
+                  <!--Reference link of the information: https://www.britannica.com/place/Cozumel -->
+                  <h1>Cozumel Island</h1> 
+               <p>Cozumel, island in the Caribbean Sea, about 10 miles (16 km) off the eastern coast of the Yucatán Peninsula, in Quintana Roo estado (state), southeastern Mexico.</p>
+               <p>Clear, warm water, spectacular coral reefs, and abundant marine life make Cozumel one of the world’s best scuba-diving destinations as well as a major resort. Indeed, the economy of Cozumel has been based on tourism since the 1970s. In addition to the diving opportunities, other water sports, and fishing, tourists are attracted by Cozumel’s tropical climate, sand beaches, and duty-free port shopping, along with its atmosphere, which is more relaxed than that of nearby Cancún. Substantial resort development on the island’s protected western coast extends both north and south from the island’s main town and commercial centre, San Miguel de Cozumel. Chankanaab National Park, just south of San Miguel, has a museum, botanic garden, and archaeological park. Cruise ships dock regularly at a pier south of San Miguel. Cozumel has regular ferry service from Playa del Carmen and Puerto Morelos. An international airport is located 2 miles (3 km) south of San Miguel.
+               </p>
+               <p>One of the most important destiny in Yucatan!</p>
+               </div>
+               <img alt="Preston Winter" id="imagcache" src="./images/cozumel-island.jpg">
+              
+            </article>
+            
+               <div id="grid">
+
+               <section class="container1">
+                  <h2>Honda Motor Scooters</h2>
+                  
+                  <img src="./images/Honda_Dio_110_L_3.png">
+                  <h3>Comfort</h3>
+                  <div class="invite1">
+                     <a href="Rentals.html"><button>here to know more!</button></a>
+                  </div>
+               </section>     
+
+               <section class="container2">
+                <div>
+                  <h2>ATV Side-by-Side</h2>
+                  <img src="./images/ATV.jpg" alt="1st principle">
+                  <h3>Strength</h3>
+                  <div class="invite2">
+                     <a href="Rentals.html"><button>here to know more!</button></a>
+                  </div>
+                </div>
+               </section>
+
+               <section class="container3">
+               <div>
+                  <h2>Jeep</h2>
+                  
+                  <img src="./images/Jeep.jpg" alt="1st principle">
+                  <h3>Design</h3>
+                  <div class="invite3">
+                     <a href="Rentals.html"><button>here to know more!</button></a>
+                  </div>
+                </div>
+               </section>
+            </div>
+
+
+      <!--Reference link of the APIs: https://openweathermap.org/city/3530103 -->
+         <div id="CurrentTemp">
+            <h1>Weather Summary</h1>
+            <p>Currently: <span id="current-temp"></span></span>° F</p>
+            <p>Today's High: <span id="High"></span>°F</p>
+            <p>Wind Chill: <span id="WindChill"></span>°F</p>
+            <p>Humidity: <span id="Humidity"></span>%</p>
+            <p>Wind Speed: <span id="WindSpeed"></span> mph</p>
+         </div>
+
+      <!--Reference link of the APIs: https://openweathermap.org/city/3530103 -->
+         <section >
+            <div id="forecast">
+                <h3>Week Weather</h3>
+                <table>
+                    <tr>
+                        <th><span id='fore1'></span></th>
+                        <th><span id='fore2'></span></th>
+                        <th><span id='fore3'></span></th>
+                        <th><span id='fore4'></span></th>
+                        <th><span id='fore5'></span></th>
+                    </tr>
+                    <tr>
+                        <td class="table-icon"><span id="forecast1"></span>°F<img id="imagesrc1" src="" alt=""></td>
+                        <td class="table-icon"><span id="forecast2"></span>°F<img id="imagesrc2" src="" alt=""></td>
+                        <td class="table-icon"><span id="forecast3"></span>°F<img id="imagesrc3" src="" alt=""></td>
+                        <td class="table-icon"><span id="forecast4"></span>°F<img id="imagesrc4" src="" alt=""></td>
+                        <td class="table-icon"><span id="forecast5"></span>°F<img id="imagesrc5" src="" alt=""></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+                
+        </main>
+    <footer> 
+        &#169; <span id="year"></span> | Aldair Artiaga | San Jose | Costa Rica | <a id="b_link" href="https://www.byui.edu/online">BYUI Online Learning</a> <br>
+        <span id="updated"></span>
+    </footer>
+    <script src="/Lesson2/JavaScript/Gethour.js"></script>
+    <script src="./js/site.js"></script>
+    <script src="./js/cityAPI.js"></script>
+    <script>
+       weathercity(3530103,"Cozumel");
+    </script>
+    </body>
+    </html>

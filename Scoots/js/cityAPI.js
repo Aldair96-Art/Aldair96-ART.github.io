@@ -1,4 +1,6 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=4a32e867e085eb3d905c18e7e6de00d4";
+const weathercity = (coo,cities_name) => {
+const urlRequest = "https://byui-cit230.github.io/weather/data/towndata.json";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id="+coo+"&units=imperial&APPID=4a32e867e085eb3d905c18e7e6de00d4";
 fetch(apiURL)
 .then((response) => response.json())
 .then((weather) => {

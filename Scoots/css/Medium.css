@@ -1,0 +1,39 @@
+@media only screen and (min-width: 32.5em){
+    main {
+      
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: 1fr; */
+
+    }
+        /* .div1 {
+            grid-column: 1/2;
+            grid-row: 1;
+          }
+          
+          .div2 {
+            grid-column: 1/2;
+            grid-row: 2;
+          }
+          
+          .div3 {
+            grid-column: 1/2;
+            grid-row: 3;
+          } */
+
+
+          .headerS {
+            width: 100%;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        #imagcache {
+          width: 100%;
+          margin-top: 15px;
+        }
+
+        .agreement{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        }
+      }
