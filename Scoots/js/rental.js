@@ -1,42 +1,56 @@
-const apiURL = "https://github.com/Aldair96-Art/aldair96-art.github.io/blob/master/Scoots/js/Rentals.JSON";
-fetch(apiURL)
-.then((response) => response.json())
-.then((Rental) => {
-    const Rentals = Rental['Rentals'];  
-    for (let i = 0; i < Rentals.length; i++) {
-        let div1 = document.createElement('div');
-        let image = document.createElement('img'); 
-        let section = document.createElement('section');
-        let h3 = document.createElement('h3');
-        let li1 = document.createElement('li');
-        let li2 = document.createElement('li'); 
-        let li3 = document.createElement('li'); 
-        let li4 = document.createElement('li');
-        let li5 = document.createElement('li');
-        
-  
-        h3.innerHTML = Rentals.Rentaltype;
-        li1.innerHTML = `Max Persons: ${Rentals.MaxPersons}`;
-        li2.innerHTML = `Half Day w/ Reservation: $${Rentals.ReservationHalfDay}`;
-        li3.innerHTML = `Full Day w/ Reservation: $${Rentals.ReservationFullDay}`;
-        li4.innerHTML = `Half Day Walk-In: $${Rentals.walkinHalfDay}`;
-        li5.innerHTML = `Full Day Walk-In: $${Rentals.walkinFullDay}`;
-        image.setAttribute('src', Rentals.photo);
-        image.setAttribute('alt', Rentals.name);
-        image.setAttribute('class', "rentalPics");
-        section.setAttribute('class', "jsonSection");
-        div1.setAttribute('class', "rentalDivs");
-        h3.setAttribute('class', "rentalH3");
-    
-        div1.appendChild(image);
-                div1.appendChild(section);
-                sect.appendChild(h3);
-                sect.appendChild(li1);
-                sect.appendChild(li2);
-                sect.appendChild(li3);
-                sect.appendChild(li4);
-                sect.appendChild(li5);
+const requestURL = 'https://aldair96-art.github.io/Scoots/Data/Rentals.JSON';
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        const Rentals = jsonObject['Rentals'];
+        Rentals.forEach(Rent => {
+            if (Rent.Rentaltype == "Honda Metro Scooter" || Rent.Rentaltype == "Honda Dio Scooter" || 
+                Rent.Rentaltype == "Honda PCX150 Scooter" || Rent.Rentaltype == "Honda Pioneer ATV" || 
+                Rent.Rentaltype == "Jeep Wrangler - 4 door with a/c"  || Rent.Rentaltype == "Jeep Wrangler - 2 door"){
+                    /*Create Elements*/
 
-                document.querySelector('rentaltypeinfo').appendChild(div1);
+                let card = document.createElement('section')
+                let div = document.createElement('div')
+                let h1 = document.createElement('h1');
+                let p1 = document.createElement('p');
+                let p2 = document.createElement('h3');
+                let p3 = document.createElement('p');
+                let p4 = document.createElement('p');
+                let p5 = document.createElement('h3');
+                let p6 = document.createElement('p');
+                let p7 = document.createElement('p');
+                let image = document.createElement('img');
+                let link = document.createElement('a');
+                let textLink = document.createElement('p');
+
+                div.setAttribute('class', 'Rentalcontainer')
+                h1.textContent = Rent.Rentaltype;
+                p1.textContent = "Max.Persons: " + Rent.MaxPersons;
+                p2.textContent = "Price under Reservation"
+                p3.textContent = "Reservation Half Day (3hrs): " + Rent.ReservationHalfDay;
+                p4.textContent = "Reservation Full Day: " + Rent.ReservationFullDay;
+                p5.textContent = "Walk-In Prices"
+                p6.textContent = "Walk in Half Day (3hrs): " + Rent.walkinHalfDay;
+                p7.textContent = "Walk in Full Day: " + Rent.walkinFullDay;
+                image.setAttribute('src', `./images/rentaltype/${Rent.images}`);
+                image.setAttribute('alt', Rent.Rentaltype);
+
+                div.appendChild(h1);
+                div.appendChild(p1);
+                div.appendChild(p2);
+                div.appendChild(p3);
+                div.appendChild(p4);
+                div.appendChild(p5);
+                div.appendChild(p6);
+                div.appendChild(p7);
+                card.appendChild(div);
+                card.appendChild(image);
+
+                document.querySelector('div.rentalinfo').appendChild(card);
+            }
         });
+
     });
+
