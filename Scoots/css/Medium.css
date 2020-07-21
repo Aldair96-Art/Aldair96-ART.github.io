@@ -94,6 +94,26 @@ display: flex;
 text-align: center;
     }
 
+#advertising{
+      position: sticky;
+         top: 40px;
+         left: 60px;
+         width: 100%;
+         font-size: .75em;
+         background-color:#606c38;
+         padding: 10px;
+         background: #F2DDA4;
+         box-shadow: 0 0 30px #111;
+         background: linear-gradient(160deg, rgba(237,242,245,1) 0%,#283618 73%);
+         text-align: center;
+}
+     
+#advertising h1 {
+         text-align: center;
+         font-size: 40px;
+         color: #ffffff;
+       }
+
 
 #forecast {
 display: flex;
