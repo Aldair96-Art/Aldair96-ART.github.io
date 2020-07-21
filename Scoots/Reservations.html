@@ -1,52 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">  
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="Fish Haven Portal">
  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Reservations</title>
+    <title>Scoots</title>
     <link rel="stylesheet" href="./css/Small.css">
     <link rel="stylesheet" href="./css/Medium.css">
     <link rel="stylesheet" href="./css/Large.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;600&display=swap" rel="stylesheet">
     
- </head>
-    <body> 
-
-     <header class="headerS">
-      <div class="logo"><a href="./home.html"><img alt="website logo" src="./images/scoots-icon.png"></a></div>
-                <h1 id="title">~Scoots</h1>
-                <h2 id="motto">Variety,vacations and accesibiliy!</h2>
-                <ul class="main-nav" id="nav-id"></ul>
-         
-                <li><a class="active" title="Home" href="./home.html">Home</a></li>
-                <li><a title="Rentals" href="./Rentals.html">Rentals</a></li>
-                <li><a title="Reservations" href="">Reservations</a></li>
-                <li><a title="Tour" href="">Tour</a></li>
-                <li><a title="Contact" href="">Contact</a></li>
+   </head>
+   <body>
+     
+      <header>
+         <img id="logo1" alt="Logo" src="./images/scoots-icon1.png">
+         <h1>Scoots</h1>
+         <h2>Ideal Choice</h2>
+         <nav>
+           
+            <button onclick="toggle_nav()" id="menu_button">&#9776;Menu</button>
+            <ul id="main_nav" class="nav_hidden">
+            <li><a  title="Home" href="./home.html">Home</a></li>
+            <li><a title="Rentals" href="./Rentals.html">Rentals</a></li>
+            <li><a class="active" title="Reservations" href="./Reservations.html">Reservations</a></li>
+            <li><a title="Tour" href="./tour.html">Tour</a></li>
+            <li><a title="Contact" href="./contact.html">Contact</a></li>
             </ul>
-             
-    </header>
+         </nav>
+      </header>
     <main class="contentform">
         <div>
         <h2 >Reservations</h2>
         <h3> Take into consideration the following agreements:</h3>
         </div>
-        <div>
-            <ul class="agreement">
-               <li>A $50 security deposit is required to confirm reservations.</li>
-               <li>A valid drivers license is required in hand at time of rental.</li>
-               <li>No one under 12 years of age are allowed to ride on the scooters.</li>
-               <li>Fuel charge not included.                                        </li>
-               <li>Unlimited mileage.</li>
-               <li>Liability insurance is free of charge.</li>
-               <li>Reservations rate requires 24 hour prior notification.</li>
-               <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
-               <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
-               <li>Rentals may be returned to either location.</li>
+        <div class="agreement">
+             <ul>
+               <p>A $50 security deposit is required to confirm reservations.</p>
+               <p>A valid drivers license is required in hand at time of rental.</p>
+               <p>No one under 12 years of age are allowed to ride on the scooters.</p>
+               <p>Fuel charge not included.                                        </p>
+               <p>Unlimited mileage.</p>
+               <p>Liability insurance is free of charge.</p>
+               <p>Reservations rate requires 24 hour prior notification.</p>
+               <p>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</p>
+               <p>Payment via Google Pay, cash, credit card, debit card, or PayPal.</p>
+               <p>Rentals may be returned to either location.</p>
             </ul>
         </div>
-        <form method="get" action="Thanks.html">
+        <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Contact Information</legend>
                 <label class="form">Full Name <input type="text" name="fullname" id="fullname" title="Must be at least 3 characters" pattern="^[a-zA-Z\s\.\-]{3,}$" required></label>
@@ -57,23 +62,22 @@
             <fieldset>
                 <legend>Reservation infomration</legend>
                 
-                <label class="formLabel">Rental Type 
-                    <select name="cruise">
+                <label class="form">Rental Type 
+                    <select class="central" name="rentaltype">
                         <option value="" disabled selected>Please Select</option>
-                        <option value="cruise">Honda Metro Scooter</option>
-                        <option value="cruise">Honda Dio Scooter</option>
-                        <option value="cruise">Honda PCX150 Scooter</option>
-                        <option value="cruise">Honda Pioneer ATV</option>
-                        <option value="cruise">Jeep Wrangler - 4 door with a/c</option>
-                        <option value="cruise">Jeep Wrangler - 2 door</option>
-                        <option value="cruise">Other</option>
+                        <option value="rentaltype">Honda Metro Scooter</option>
+                        <option value="rentaltype">Honda Dio Scooter</option>
+                        <option value="rentaltype">Honda PCX150 Scooter</option>
+                        <option value="rentaltype">Honda Pioneer ATV</option>
+                        <option value="rentaltype">Jeep Wrangler - 4 door with a/c</option>
+                        <option value="rentaltype">Jeep Wrangler - 2 door</option>
                     </select>
 
                 <label class="form">Rental Start date <input type="date" name="completeDate"></label>
                 <label class="form">Rental End date <input type="date" name="completeDate"></label>
 
-                <label class="formLabel">Cruise Line (if applicable) 
-                    <select name="Cruisetype">
+                <label class="form">Cruise Line (if applicable) 
+                    <select  name="Cruisetype">
                         <option value="" disabled selected>Please Select</option>
                         <option value="Cruisetype">Norwegian Cruise Line</option>
                         <option value="Cruisetype">Celebrity Cruises</option>
@@ -83,13 +87,24 @@
                         <option value="Cruisetype">Norwegian Cruises</option>
                         <option value="Cruisetype">Other</option>
                     </select>
+                <label class="form">Rental Duration
+                    <select  name="Duration">
+                        <option value="" disabled selected>Please Select</option>
+                        <option value="">Half-Day</option>
+                        <option value="Duration">1 day</option>
+                        <option value="Duration">2 days</option>
+                        <option value="Duration">3 days</option>
+                        <option value="Duration">4 days</option>
+                        <option value="Duration">5 days</option>
+                        <option value="Duration">Week</option>
+                </select>
 
 
-                <label class="form">Enter Comments Here:<textarea name="comments"></textarea></label>
+                <label class="form">In case you neeed further assitance,Please Enter Comments Here:<textarea name="comments"></textarea></label>
             </fieldset>
 
             <fieldset id="Button">
-            <input type="submit" value="Report Weather" class="SubmittButton">
+            <input type="submit" value="Complete Resevation" class="SubmittButton">
             </fieldset>
         </form>
 

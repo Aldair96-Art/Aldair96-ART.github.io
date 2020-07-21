@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">  
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<meta name="description" content="Fish Haven Portal">
  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,26 +11,27 @@
     <link rel="stylesheet" href="./css/Medium.css">
     <link rel="stylesheet" href="./css/Large.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;600&display=swap" rel="stylesheet">
     
- </head>
-    <body> 
-
-     <header class="headerS">
-      <div class="logo"><a href="./home.html"><img alt="website logo" src="./images/scoots-icon.png"></a></div>
-                <h1 id="title">~Scoots</h1>
-                <h2 id="motto">Variety,vacations and accesibiliy!</h2>
-           <nav>
-               <ul class="main-nav" id="nav-id"></ul>
-                <li><a class="active" title="Home" href="./home.html">Home</a></li>
-                <li><a title="Rentals" href="./Rentals.html">Rentals</a></li>
-                <li><a title="Reservations" href="./Reservations.html">Reservations</a></li>
-                <li><a title="Tour" href="">Tour</a></li>
-                <li><a title="Contact" href="">Contact</a></li>
-               </ul>
-           </nav>
-             
-    </header>
+   </head>
+   <body>
+     
+      <header>
+         <img id="logo1" alt="Logo" src="./images/scoots-icon1.png">
+         <h1>Scoots</h1>
+         <h2>Ideal Choice</h2>
+         <nav>
+           
+            <button onclick="toggle_nav()" id="menu_button">&#9776;Menu</button>
+            <ul id="main_nav" class="nav_hidden">
+            <li><a class="active" title="Home" href="./home.html">Home</a></li>
+            <li><a title="Rentals" href="./Rentals.html">Rentals</a></li>
+            <li><a title="Reservations" href="./Reservations.html">Reservations</a></li>
+            <li><a title="Tour" href="./tour.html">Tour</a></li>
+            <li><a title="Contact" href="./contact.html">Contact</a></li>
+            </ul>
+         </nav>
+      </header>
 
     <main class="content">
 
@@ -42,61 +46,65 @@
                
                <div id="artcontent"> 
                   <!--Reference link of the information: https://www.britannica.com/place/Cozumel -->
-                  <h1>Cozumel Island</h1> 
+                  <h1>Cozumel Island</h1>
                <p>Cozumel, island in the Caribbean Sea, about 10 miles (16 km) off the eastern coast of the Yucatán Peninsula, in Quintana Roo estado (state), southeastern Mexico.</p>
                <p>Clear, warm water, spectacular coral reefs, and abundant marine life make Cozumel one of the world’s best scuba-diving destinations as well as a major resort. Indeed, the economy of Cozumel has been based on tourism since the 1970s. In addition to the diving opportunities, other water sports, and fishing, tourists are attracted by Cozumel’s tropical climate, sand beaches, and duty-free port shopping, along with its atmosphere, which is more relaxed than that of nearby Cancún. Substantial resort development on the island’s protected western coast extends both north and south from the island’s main town and commercial centre, San Miguel de Cozumel. Chankanaab National Park, just south of San Miguel, has a museum, botanic garden, and archaeological park. Cruise ships dock regularly at a pier south of San Miguel. Cozumel has regular ferry service from Playa del Carmen and Puerto Morelos. An international airport is located 2 miles (3 km) south of San Miguel.
                </p>
                <p>One of the most important destiny in Yucatan!</p>
                </div>
-               <img alt="Preston Winter" id="imagcache" src="./images/cozumel-island.jpg">
+               <img alt="cozumel-island" id="imag" src="./images/cozumel-island.jpg">
               
             </article>
             
                <div id="grid">
 
-               <section class="container1">
-                  <h2>Honda Motor Scooters</h2>
+               <section >
+                  <h2>Honda Motor</h2>
                   
-                  <img src="./images/Honda_Dio_110_L_3.png">
+                  <img alt="Honda" class="rent" src="./images/Honda_Dio_110_L_3.png">
                   <h3>Comfort</h3>
+
                   <div class="invite1">
-                     <a href="Rentals.html"><button>here to know more!</button></a>
+                     <a href="Rentals.html"><button>Click here to know more!</button></a>
                   </div>
                </section>     
 
-               <section class="container2">
-                <div>
+               <section>
+                
                   <h2>ATV Side-by-Side</h2>
-                  <img src="./images/ATV.jpg" alt="1st principle">
+                  <img alt="ATV" class="rent" src="./images/ATV.jpg">
                   <h3>Strength</h3>
                   <div class="invite2">
-                     <a href="Rentals.html"><button>here to know more!</button></a>
+                     <a href="Rentals.html"><button>Click here to know more!</button></a>
                   </div>
-                </div>
+               
                </section>
 
-               <section class="container3">
-               <div>
+               <section>
+               
                   <h2>Jeep</h2>
                   
-                  <img src="./images/Jeep.jpg" alt="1st principle">
+                  <img alt="Jeep" class="rent" src="./images/Jeep.jpg" alt="jeep">
                   <h3>Design</h3>
                   <div class="invite3">
-                     <a href="Rentals.html"><button>here to know more!</button></a>
+                     <a href="Rentals.html"><button>Click here to know more!</button></a>
                   </div>
-                </div>
+               
                </section>
             </div>
 
 
       <!--Reference link of the APIs: https://openweathermap.org/city/3530103 -->
+
          <div id="CurrentTemp">
+            <section>
             <h1>Weather Summary</h1>
             <p>Currently: <span id="current-temp"></span></span>° F</p>
             <p>Today's High: <span id="High"></span>°F</p>
             <p>Wind Chill: <span id="WindChill"></span>°F</p>
             <p>Humidity: <span id="Humidity"></span>%</p>
             <p>Wind Speed: <span id="WindSpeed"></span> mph</p>
+         </section>
          </div>
 
       <!--Reference link of the APIs: https://openweathermap.org/city/3530103 -->
