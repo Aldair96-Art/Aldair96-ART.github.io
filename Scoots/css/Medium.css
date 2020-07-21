@@ -205,4 +205,26 @@ width: 300px;
   margin: 40px;
   border: solid;
 }
+
+.rentalinfo section img{
+  width: 300px;
+
+}
+
+.rentalinfo section p{
+  text-align: center;
+
+}
+
+.rentalinfo section {
+  border: solid #BC6C25;
+  margin: 100px;
+  background-color: #DDA15E; 
+
+}
+.rentalinfo{
+  border: solid #BC6C25;
+  margin: 100px;
+} 
+
       }

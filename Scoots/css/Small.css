@@ -444,3 +444,21 @@ grid-column: 10/10;
   margin: 40px;
   border: solid;
 }
+
+.rentalinfo section img{
+  width: 300px;
+
+}
+
+.rentalinfo section p,h1,h3{
+  text-align: center;
+  color: #ffffff;
+
+}
+
+.rentalinfo section {
+  border: solid #BC6C25;
+  background-color: #DDA15E;
+  padding: 10px; 
+
+}
