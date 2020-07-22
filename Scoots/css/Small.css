@@ -70,21 +70,7 @@ footer{
 
 /*//////////////*/
   
-div {
-    
-    text-align: center;
-    color: #1d1c1c;
-    font-size: 1.25rem;
-    font-family: 'Lora', serif;
-    border-radius: 5px;
-  }
-  
-  div h2 {
-    background-color: #DDA15E;
-    font-size: 2rem;
-    padding: 0.5rem;
-    border-radius: 5px;
-  }
+
   
   h1,
   h2,
