@@ -186,7 +186,10 @@ article {
 
 /**Rental*/
 
-.rentalinfo section p,h1,h3{
+.renttitle{
+  text-align: center;
+}
+.rentalinfo section p,h1,h2,h3{
   text-align: center;
   color: #ffffff;
 

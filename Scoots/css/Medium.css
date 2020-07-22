@@ -175,6 +175,10 @@ border: solid;}
 
 /*Rental*/
 
+.renttitle{
+  text-align: center;
+}
+
 .rentalinfo section img{
   width: 300px;
 
