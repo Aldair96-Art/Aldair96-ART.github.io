@@ -27,6 +27,7 @@ font-weight: normal;
 color: #ffffff;
 padding-top: 25px;
 margin-left: auto;
+margin-right: auto;
 margin-bottom: auto;
 }
 
@@ -37,6 +38,7 @@ margin-bottom: auto;
   border: 1px solid #ccc;
   padding: 1px;
   margin-left: auto;
+  margin-right: auto;
   margin-bottom: auto;
 }
 
@@ -160,7 +162,7 @@ footer{
       color: #F3E9D2;
       padding-bottom: 1.5rem;
       }
-      
+
       .rentalinfo section h2{
         text-align: center;
         color: black;
