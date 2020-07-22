@@ -1,4 +1,4 @@
-const requestURL = 'https://aldair96-art.github.io/Scoots/data/Rentals.JSON';
+const requestURL = 'https://aldair96-art.github.io/Scoots/data/rentals.JSON';
 fetch(requestURL)
     .then(function (response) {
         return response.json();
