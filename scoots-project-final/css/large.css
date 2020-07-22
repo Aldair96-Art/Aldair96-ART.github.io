@@ -190,12 +190,13 @@ article {
 
 /**Rental*/
 
-.renttitle{
+.rentalinfo section h2{
   text-align: center;
   color: black;
 
 }
-.rentalinfo section p,h1,h2,h3{
+
+.rentalinfo section p,h1,h3{
   text-align: center;
   color: #ffffff;
 
@@ -203,7 +204,8 @@ article {
 
 
 .rentalinfo section img{
-  width: 500px;
+  width: 100%;
+
 
 }
 

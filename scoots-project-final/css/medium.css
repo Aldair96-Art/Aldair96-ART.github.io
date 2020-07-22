@@ -205,6 +205,11 @@ border: solid;}
   width: 300px;
 }
 
+.rentalinfo section h2{
+  text-align: center;
+  color: black;
+
+}
 
 /*Rental finish here*/
 

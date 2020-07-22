@@ -160,7 +160,12 @@ footer{
       color: #F3E9D2;
       padding-bottom: 1.5rem;
       }
-
+      
+      .rentalinfo section h2{
+        text-align: center;
+        color: black;
+      
+      }
 
 /*button*/
 
