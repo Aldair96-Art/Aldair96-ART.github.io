@@ -15,7 +15,6 @@ header {
 header h1 {
   margin: 0; 
   color: #ffffff;
-  margin-left: 150px;
   grid-column: 2;
   margin-left: auto;
   margin-right: auto;
@@ -31,8 +30,8 @@ header h2{
   font-weight: normal;
   color: #ffffff;
   padding-top: 5px;
-  margin-left: 100px;
-  margin-bottom: 50px;
+  margin-left: auto;
+  margin-bottom: auto;
   grid-column: 2;
   grid-row: 3;
             }
