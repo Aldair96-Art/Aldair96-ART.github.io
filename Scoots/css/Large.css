@@ -68,6 +68,26 @@ grid-template-columns: 1fr 1fr 1fr;
    p{
     font-size: 16px;
    }
+
+   #advertising{
+    position: sticky;
+       top: 40px;
+       left: 60px;
+       width: 100%;
+       font-size: .75em;
+       background-color:#606c38;
+       padding: 10px;
+       background: #F2DDA4;
+       box-shadow: 0 0 30px #111;
+       background: linear-gradient(160deg, rgba(237,242,245,1) 0%,#283618 73%);
+       text-align: center;
+}
+   
+#advertising h1 {
+       text-align: center;
+       font-size: 40px;
+       color: #ffffff;
+     }
   
 
 article {
@@ -80,6 +100,23 @@ article {
   margin-right: 390px;
                   
                   }
+
+#artcontent{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 15px;
+  padding: 15px;
+  width: 70%;
+  border: solid;
+  margin-right: 390px;
+
+ }  
+ 
+ #artcontent h1{
+   color: black;
+ 
+
+ }  
 #imag {
 max-width: 100%;
 margin-top: 45px;
@@ -190,14 +227,16 @@ grid-column: 9;
 
 #CurrentTemp{
   position: sticky;
-  top: 60px;
-  font-size: .75em;
-  background-color: #606c38;
-  padding: 10px;
-  background: #F2DDA4;
-  box-shadow: 0 0 30px #111;
-  background: linear-gradient(160deg, rgba(237,242,245,1) 0%,#283618 73%);
-  margin: 90px;
+       top: 40px;
+       left: 60px;
+       width: 100%;
+       font-size: .75em;
+       background-color:#606c38;
+       padding: 10px;
+       background: #F2DDA4;
+       box-shadow: 0 0 30px #111;
+       background: linear-gradient(160deg, rgba(237,242,245,1) 0%,#283618 73%);
+       text-align: center;
    }
  
    #CurrentTemp h1 {
