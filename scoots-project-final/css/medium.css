@@ -10,7 +10,11 @@
 header {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 50px 100px;
-        }
+  }
+
+  header{
+    font-family: 'Hind';
+  }
 
 header h1 {
   margin: 0; 
@@ -31,6 +35,7 @@ header h2{
   color: #ffffff;
   padding-top: 5px;
   margin-left: auto;
+  margin-right: auto;
   margin-bottom: auto;
   grid-column: 2;
   grid-row: 3;

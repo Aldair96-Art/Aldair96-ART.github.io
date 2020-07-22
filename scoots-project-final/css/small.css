@@ -7,6 +7,10 @@ header{
   display: grid;
 }
 
+header{
+  font-family: 'Hind';
+}
+
 header h1 {
 margin: 0; 
 font-size: 40px;
@@ -262,7 +266,6 @@ article{
   position: relative;
   width: 70%;
   overflow: hidden;
-  color: #bfc1c8;
   margin-top: 10px;
   margin-left: auto;
   text-align: center;
@@ -446,7 +449,7 @@ grid-column: 10/10;
 
 .rentalinfo section p,h1,h3{
   text-align: center;
-  color: #ffffff;
+  
 
 }
 

@@ -12,6 +12,9 @@ header {
   grid-template-rows: 50px 100px;
   padding-bottom: 20px;
 }
+header{
+  font-family: 'Hind';
+}
 
 header h1 {
   margin: 0; 
@@ -83,10 +86,11 @@ nav {
 
 p{
   font-size: 16px;
+  font-family: 'Open Sans';
  }
 
 .content h1{
- color: black;
+ color: white;
 }
 
 article {
@@ -182,6 +186,10 @@ article {
       color: #F3E9D2;
       padding-bottom: 1.5rem;
   }
+  #forecast p {
+   color: #ffffff;
+}
+
 
 /**Home finish here*/
 
