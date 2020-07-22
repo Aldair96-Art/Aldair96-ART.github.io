@@ -22,10 +22,10 @@ fetch(requestURL)
                 let h4 = document.createElement('h3');
                 let p6 = document.createElement('p');
                 let p7 = document.createElement('p');
+
                 let image = document.createElement('img');
                 let imagecontainer = document.createElement('div');
                 imagecontainer.classList.add('image_container')
-                let link = document.createElement('a');
                 let textLink = document.createElement('p');
 
 
@@ -42,7 +42,6 @@ fetch(requestURL)
                 image.setAttribute('src', `./${Rent.images}`);
                 image.setAttribute('alt', Rent.Rentaltype);
                 
-
                 div.appendChild(h1);
                 div.appendChild(p1);
                 div.appendChild(h3);
@@ -54,6 +53,8 @@ fetch(requestURL)
                 card.appendChild(div);
                 imagecontainer.appendChild(image);
                 card.appendChild(imagecontainer)
+                
+                
                 /*querySelector to find rentalinfo class*/
 
                 document.querySelector('div.rentalinfo').appendChild(card);
