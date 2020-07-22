@@ -23,6 +23,8 @@ fetch(requestURL)
                 let p6 = document.createElement('p');
                 let p7 = document.createElement('p');
                 let image = document.createElement('img');
+                let imagecontainer = document.createElement('div');
+                imagecontainer.classList.add('image_container')
                 let link = document.createElement('a');
                 let textLink = document.createElement('p');
 
@@ -50,8 +52,8 @@ fetch(requestURL)
                 div.appendChild(p6);
                 div.appendChild(p7);
                 card.appendChild(div);
-                card.appendChild(image);
-
+                imagecontainer.appendChild(image);
+                card.appendChild(imagecontainer)
                 /*querySelector to find rentalinfo class*/
 
                 document.querySelector('div.rentalinfo').appendChild(card);

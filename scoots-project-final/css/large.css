@@ -203,11 +203,15 @@ article {
 }
 
 
-.rentalinfo section img{
+.image_container img{
   width: 100%;
-
-
+  max-width: 600px ;
 }
+
+.image_container{
+  text-align: center;
+}
+
 
 .rentalinfo section {
   border: solid #BC6C25;
