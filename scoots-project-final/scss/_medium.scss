@@ -1,0 +1,382 @@
+
+
+      
+/*Header*/
+
+header {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 50px 100px;
+  }
+
+  header{
+    font-family: 'Hind';
+  }
+
+header h1 {
+  margin: 0; 
+  color: #ffffff;
+  grid-column: 2;
+  margin-left: auto;
+  margin-right: auto;
+            
+  }
+header h1 {
+  font-size: 30px;
+  }
+            
+header h2{
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+  color: #ffffff;
+  padding-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  grid-column: 2;
+  grid-row: 3;
+            }
+#logo1 {
+    
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 1px;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top: 1px;
+  grid-column: 2/2;
+            }
+nav {
+  grid-column: 1/4;
+  grid-row: 3;
+  margin-left: 20px;
+  margin-top: 45px;
+  }
+          
+nav li {width: 25%; float: left;}
+
+/*Header finish here*/
+
+/*General code*/
+
+.content {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+  margin-top: 3em;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto; 
+}
+
+#menu_button {
+  display: none;
+  }
+         
+         
+.nav_hidden {
+display: flex;
+         }
+
+article {
+display: grid;
+margin-top: 15px;
+padding: 15px;
+width: 80%;
+border: solid;}
+
+
+
+/*General code finish here*/
+
+
+
+/*Home*/
+
+#advertising{
+  position: sticky;
+  top: 40px;
+  left: 60px;
+  width: 100%;
+  font-size: .75em;
+  background-color:#606c38;
+  padding: 10px;
+  background: #F2DDA4;
+  box-shadow: 0 0 30px #111;
+  background: linear-gradient(160deg, rgba(237,242,245,1) 0%,#283618 73%);
+  text-align: center;
+}
+ 
+#advertising h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #ffffff;
+  }
+
+  .artcontent{
+    display: grid;
+    grid-template-columns:1fr;
+    margin-top: 15px;
+    padding: 15px;
+    border: solid;
+    }
+  .artcontent img {
+      grid-column: 2;
+      }
+  .artcontent h1{
+    color: black;
+  }
+  
+#grid {
+    display: grid;
+      grid-template-columns:1fr;
+      grid-template-rows: 1fr;
+    }
+
+#CurrentTemp{
+      position: sticky;
+      top: 60px;
+      font-size: .75em;
+      background-color: #606c38;
+      padding: 10px;
+      background: #F2DDA4;
+      box-shadow: 0 0 30px #111;
+      background: linear-gradient(160deg, rgba(237,242,245,1) 0%,#283618 73%);
+      margin: 90px;
+       }
+     
+#CurrentTemp h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #ffffff;
+    }
+#CurrentTemp p {
+  text-align: center;
+  font-size: 20px;
+  color: #ffffff;
+    }
+    
+#forecast {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #283618;
+  color: #F3E9D2;
+  padding-bottom: 1.5rem;
+  }
+
+  #imag {
+    width: 100%;
+    margin-top: 15px;
+  }
+/*Home finish here*/
+
+
+
+/*Rental*/
+
+.renttitle{
+  text-align: center;
+}
+
+.rentalinfo section img{
+  width: 300px;
+
+}
+
+.rentalinfo section p{
+  text-align: center;
+
+}
+
+.rentalinfo section {
+  border: solid #BC6C25;
+  margin: 100px;
+  background-color: #DDA15E; 
+
+}
+.rentalinfo{
+  border: solid #BC6C25;
+  margin: 100px;
+}
+
+.rent{
+  width: 300px;
+}
+
+.rentalinfo section h2{
+  text-align: center;
+  color: black;
+
+}
+
+/*Rental finish here*/
+
+
+
+/*Reservation*/
+
+.agreement{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.agreement p{
+text-align: center;
+}
+
+.contentform {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+  margin-top: 3em;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  }
+            
+  form{
+  background-color: #ffffff;
+  padding: 1.5em;
+  margin: 1em 0;
+  border-radius: 10px;
+  border: solid;
+              }
+            
+  form fieldset {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #114B5F;
+  border-radius: 5px;
+  color: #114B5F;
+  width: 90%;
+  max-width: 30rem;
+  }
+            
+form legend {
+margin: 0 1rem;
+padding: 0 .5rem;
+font-size: 1.5rem;
+}
+            
+form label.form {
+display: block;
+padding-top: .25rem;
+padding-bottom: 1rem;
+font-size: 1rem;
+  }
+            
+form label.form input, 
+form label.form select{
+display: block;
+font-size: 1rem;
+background-color: #F2DDA4;
+color: #555;
+border: solid 1px #999;
+border-radius: 2px;
+padding: .75rem;
+width: 90%;
+max-width: 20rem;
+margin-left: 70px}
+
+textarea{
+  display: block;
+  font-size: 1rem;
+  background-color: #F2DDA4;
+  color: #555;
+  border: solid 1px #999;
+  border-radius: 2px;
+  padding: .75rem;
+  width: 90%;
+  max-width: 20rem;
+  margin-left: 70px
+}
+
+
+/*Reservation finish here*/
+
+
+/*Tour*/
+
+
+/*Tour finish here*/
+
+
+/*contact*/
+.divcont{
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+#contact{
+margin: 100px;
+border: solid;
+}
+
+#contact h3{
+  color: black;
+  }
+
+/*contact finish here*/
+
+/*footer*/
+footer{
+  background-color: #283618;
+  color: #ffffff;    
+  text-align: center;
+  border-radius: 2px solid;
+  margin: 10px;
+}
+
+/*//////////////*/
+          
+         
+         
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+          
+          
+          
+          .formLabel{
+            text-align: center;
+          }
+
+
+.thanks img{
+width: 300px;
+}
+
+.imgtour{
+  max-width:500px ;
+}
+
+.builds1{
+  width: 500px;
+  margin-bottom: 60px;
+}
+
+#contact{
+  margin: 40px;
+  border: solid;
+}
+
+ 
+
+      

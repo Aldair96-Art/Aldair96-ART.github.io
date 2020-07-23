@@ -209,15 +209,28 @@ article {
 
 }
 
+.rentalinfo section img{
+  text-align: center;
+  
+}
 
-.image_container img{
+.rentalinfo section img{
+  text-align: center;
+  width: 100%;
+  max-width: 600px ;
+  
+}
+
+div .image_container{
+  text-align: center;
+}
+
+div .image_container img{
   width: 100%;
   max-width: 600px ;
 }
 
-.image_container{
-  text-align: center;
-}
+
 
 
 .rentalinfo section {

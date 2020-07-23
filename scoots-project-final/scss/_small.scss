@@ -1,0 +1,459 @@
+/*header*/
+header {
+  background-color: #606c38;
+  padding: 1px;;
+}
+header{
+  display: grid;
+}
+
+header{
+  font-family: 'Hind';
+}
+
+header h1 {
+margin: 0; 
+font-size: 40px;
+color: #ffffff;
+margin-left: auto;
+margin-right: auto;
+
+}
+header h1 {
+  font-size: 40px;
+
+}
+
+header h2{
+margin: 0; 
+font-size: 30px; 
+font-weight: normal;
+color: #ffffff;
+padding-top: 25px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: auto;
+}
+
+#logo1 {
+  width: 60%;
+  max-width: 100px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+}
+
+nav {background-color: #606c38;}
+nav ul{margin:0; padding: 0;}
+nav li {list-style-type: none;}
+nav li.active {background-color: #606c38}
+nav a {
+  display: block;
+  padding: .8rem 0; /*44px min*/
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+}
+nav a:hover {background-color: #BC6C25;}
+
+
+.nav_hidden {
+  display: none;
+}
+
+/*//////////////*/
+
+
+/*footer*/
+footer{
+    background-color: #283618;
+    color: #ffffff;    
+    text-align: center;
+    border-radius: 2px solid;
+    margin: 10px;
+  }
+
+/*//////////////*/
+  
+.renttitle{
+  text-align: center;
+}
+  
+  h1,
+  h2,
+  h3 {
+    font-family: 'Lora', serif;
+    padding: 0.5rem;
+  }
+  
+
+  
+  div p {
+ 
+    text-align: justify;
+  }
+  
+  main {
+    margin: 0 25px 0 25px;
+    grid-gap: 25px;
+  }
+
+  footer {
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+  }
+  
+  #b_link {
+    color:white;
+ }
+
+
+#advertising{
+ position: sticky;
+    top: 40px;
+    left: 60px;
+    width: 100%;
+    font-size: .75em;
+    background-color:#606c38;
+    padding: 10px;
+    background: #F2DDA4;
+    box-shadow: 0 0 30px #111;
+    background: linear-gradient(160deg, rgba(237,242,245,1) 0%,#283618 73%);
+    text-align: center;
+  }
+
+  #advertising h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+  }
+
+ 
+  #CurrentTemp{
+    position: sticky;
+    top: 60px;
+    font-size: .75em;
+    background-color: #606c38;
+    padding: 10px;
+    background: #F2DDA4;
+    box-shadow: 0 0 30px #111;
+    background: linear-gradient(160deg, rgba(237,242,245,1) 0%,#283618 73%);
+    margin: 20px;
+     }
+   
+     #CurrentTemp h1 {
+       text-align: center;
+       font-size: 40px;
+       color: #ffffff;
+     }
+     #CurrentTemp p {
+      text-align: center;
+      font-size: 20px;
+      color: #ffffff;
+    }
+
+    #forecast {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #283618;
+      color: #F3E9D2;
+      padding-bottom: 1.5rem;
+      }
+
+      .rentalinfo section h2{
+        text-align: center;
+        color: black;
+      
+      }
+
+/*button*/
+
+#menu_button {
+   background-color: transparent;
+   border: none;
+   outline: none;
+   color: #ffffff;
+   font-size: 1.4rem;
+   margin: auto;
+   display: block;
+}
+
+
+.active {
+   background-color:  #BC6C25;
+   color: #ffffff;
+   font-weight: bold;
+}
+.active:hover {
+   color: #FFFF;
+}
+
+/*///////////////////////*/
+
+/*Cozumel image*/
+#imag {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 1px;
+  box-shadow: 5px 5px 5px #999;
+}
+
+
+.rent{
+  width: 300px;
+}
+
+/*///////////////////////*/
+
+.content {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+  margin-top: 3em;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto; ;
+}
+
+
+.divcont{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.builds1{
+  padding: 1px;
+ 
+
+}
+
+.builds2{
+  padding: 1px;
+}
+
+
+
+.contact {
+  position: relative;
+  overflow: hidden;
+  color: black;
+  margin-top: 3em;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+}
+.contact p {
+  text-align: center;
+}
+
+article {
+  display: grid;
+  margin-top: 15px;
+  grid-template-columns: 3fr;
+  grid-column: 1/3;
+  margin-top: 15px;
+  padding: 15px;
+}
+
+article{
+  position: relative;
+  width: 70%;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+  border: solid;
+}
+
+.contentform {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+  margin-top: 3em;
+  margin-left: auto;
+  text-align: center;
+  margin-right: auto;
+}
+
+form{
+background-color: #ffffff;
+    padding: 1.5em;
+    margin: 1em 0;
+    border-radius: 10px;
+    border: solid;
+  }
+
+  form fieldset {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #114B5F;
+    border-radius: 5px;
+    color: #114B5F;
+    width: 90%;
+    max-width: 30rem;
+}
+
+form legend {
+  margin: 0 1rem;
+  padding: 0 .5rem;
+  font-size: 1.5rem;
+}
+
+form label.form {
+  display: block;
+  padding-top: .25rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+form label.form input, 
+form label.form select
+
+{
+   display: block;
+   font-size: 1rem;
+   background-color: #F2DDA4;
+   color: #555;
+   border: solid 1px #999;
+   border-radius: 2px;
+   padding: .75rem;
+   width: 90%;
+   max-width: 20rem;
+   
+}
+
+
+
+
+.formLabel{
+  text-align: center;
+}
+
+.agreement{
+    margin-right: 30px;
+    text-align: center;
+
+}
+
+textarea {
+  display: block;
+  font-size: 1rem;
+  background-color: #F2DDA4;
+  color: #555;
+  border: solid 1px #999;
+  border-radius: 2px;
+  padding: .75rem;
+  width: 90%;
+  max-width: 20rem;
+}
+
+.invite1{
+  position: sticky;
+       top: 60px;
+       left: 150px;
+       font-size: .75em;
+       background-color:#DDA15E;
+       padding: 10px;
+       background: #F2DDA4;
+       margin: 30px ;
+
+}
+
+.invite2{
+  position: sticky;
+       top: 60px;
+       left: 150px;
+       font-size: .75em;
+       background-color:#DDA15E;
+       padding: 10px;
+       background: #F2DDA4;
+       margin: 30px ;
+
+}
+
+.invite3{
+  position: sticky;
+       top: 60px;
+       left: 150px;
+       font-size: .75em;
+       background-color:#DDA15E;
+       padding: 10px;
+       background: #F2DDA4;
+       margin: 30px ;
+
+}
+
+.agreement p{
+  text-align: center;
+}
+
+.thanks{
+  border: solid;
+  margin: 30px;
+}
+
+.thanks img{
+  width: 200px;
+}
+
+.imgtour{
+  max-width:300px ;
+}
+
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+
+  
+}
+.icon-img{
+  max-width: 30px;
+}
+.icon-imgf{
+  grid-column: 6/6;
+}
+.icon-imgi{
+  grid-column: 8/8;
+}
+.icon-imgy{
+grid-column: 10/10;
+}
+
+.builds{
+  max-width: 300px;
+}
+
+.builds1{
+  width: 300px;
+  margin-bottom: 60px;
+}
+
+#contact{
+  margin: 40px;
+  border: solid;
+}
+
+.rentalinfo section img{
+  width: 300px;
+
+}
+
+.rentalinfo section p,h1,h3{
+  text-align: center;
+  
+
+}
+
+.rentalinfo section {
+  border: solid #BC6C25;
+  background-color: #DDA15E;
+  padding: 10px; 
+
+}
