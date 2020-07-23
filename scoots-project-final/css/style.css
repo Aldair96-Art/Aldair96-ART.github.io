@@ -312,6 +312,12 @@ header {
 header {
   font-family: "Hind"; }
 
+h1, h2, h3 {
+  font-family: "Hind"; }
+
+p {
+  font-family: "Open\aSans"; }
+
 header h1 {
   margin: 0;
   font-size: 40px;
@@ -690,6 +696,12 @@ textarea {
   header {
     font-family: "Hind"; }
 
+  h1, h2, h3 {
+    font-family: "Hind"; }
+
+  p {
+    font-family: "Open\aSans"; }
+
   header h1 {
     margin: 0;
     color: #ffffff;
@@ -981,6 +993,12 @@ textarea {
 
   header {
     font-family: "Hind"; }
+
+  h1, h2, h3 {
+    font-family: "Hind"; }
+
+  p {
+    font-family: "Open\aSans"; }
 
   header h1 {
     margin: 0;
