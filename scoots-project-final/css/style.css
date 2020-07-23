@@ -310,7 +310,7 @@ header {
   display: grid; }
 
 header {
-  font-family: 'Hind'; }
+  font-family: "Hind"; }
 
 header h1 {
   margin: 0;
@@ -400,7 +400,7 @@ footer {
   font-size: 1rem; }
 
 #b_link {
-  color: white; }
+  color: #ffffff; }
 
 #advertising {
   position: sticky;
@@ -452,7 +452,7 @@ footer {
 
 .rentalinfo section h2 {
   text-align: center;
-  color: black; }
+  color: #000000; }
 
 /*button*/
 #menu_button {
@@ -470,7 +470,7 @@ footer {
   font-weight: bold; }
 
 .active:hover {
-  color: #FFFF; }
+  color: #ffffff; }
 
 /*///////////////////////*/
 /*Cozumel image*/
@@ -506,7 +506,7 @@ footer {
 .contact {
   position: relative;
   overflow: hidden;
-  color: black;
+  color: #000000;
   margin-top: 3em;
   margin-left: auto;
   text-align: center;
@@ -688,7 +688,7 @@ textarea {
     grid-template-rows: 100px 50px 100px; }
 
   header {
-    font-family: 'Hind'; }
+    font-family: "Hind"; }
 
   header h1 {
     margin: 0;
@@ -786,7 +786,7 @@ textarea {
     grid-column: 2; }
 
   .artcontent h1 {
-    color: black; }
+    color: #000000; }
 
   #grid {
     display: grid;
@@ -852,7 +852,7 @@ textarea {
 
   .rentalinfo section h2 {
     text-align: center;
-    color: black; }
+    color: #000000; }
 
   /*Rental finish here*/
   /*Reservation*/
@@ -939,7 +939,7 @@ textarea {
     border: solid; }
 
   #contact h3 {
-    color: black; }
+    color: #000000; }
 
   /*contact finish here*/
   /*footer*/
@@ -980,7 +980,7 @@ textarea {
     padding-bottom: 20px; }
 
   header {
-    font-family: 'Hind'; }
+    font-family: "Hind"; }
 
   header h1 {
     margin: 0;
@@ -1042,16 +1042,19 @@ textarea {
 
   p {
     font-size: 16px;
-    font-family: 'Open Sans'; }
+    font-family: "Open\aSans"; }
 
   .content div h1 {
-    color: white; }
+    color: #000000; }
 
   article {
     display: grid;
     grid-template-columns: 3fr 2fr;
     margin-top: 15px;
     padding: 15px; }
+
+  #artcontent h1 {
+    color: #000000; }
 
   /**General code finish here*/
   /**Home*/
@@ -1084,7 +1087,7 @@ textarea {
     grid-column: 2; }
 
   .artcontent h1 {
-    color: black; }
+    color: #000000; }
 
   #imag {
     width: 100%;
@@ -1096,7 +1099,7 @@ textarea {
     grid-template-rows: 1fr; }
 
   #grid h2, p {
-    color: black; }
+    color: #000000; }
 
   #CurrentTemp {
     position: sticky;
@@ -1135,11 +1138,11 @@ textarea {
   /**Rental*/
   .rentalinfo section h2 {
     text-align: center;
-    color: black; }
+    color: #000000; }
 
   .rentalinfo section p, h1, h3 {
     text-align: center;
-    color: black; }
+    color: #000000; }
 
   .rentalinfo section img {
     text-align: center; }
@@ -1199,7 +1202,7 @@ textarea {
     margin-right: auto; }
 
   .contentform {
-    color: black; }
+    color: #000000; }
 
   form {
     background-color: #ffffff;
@@ -1248,7 +1251,7 @@ textarea {
     border: solid; }
 
   #contact h3 {
-    color: black; }
+    color: #000000; }
 
   .builds {
     max-width: 500px; }

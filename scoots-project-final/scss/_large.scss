@@ -13,7 +13,7 @@ header {
   padding-bottom: 20px;
 }
 header{
-  font-family: 'Hind';
+  font-family: $PrimaryfontFamily;
 }
 
 header h1 {
@@ -21,7 +21,7 @@ header h1 {
   font-size: 40px;
   grid-column: 2;
   grid-row: 1;
-  color: #ffffff;
+  color: $whiteColor;
   margin-left: auto;
   margin-right: auto;
   }
@@ -30,7 +30,7 @@ header h2{
 margin: 0; 
 font-size: 30px; 
 font-weight: normal;
-color: #ffffff;
+color: $whiteColor;
 grid-column: 2;
 grid-row: 2;
 margin-left: auto;
@@ -86,11 +86,11 @@ nav {
 
 p{
   font-size: 16px;
-  font-family: 'Open Sans';
+  font-family: $SecundaryryfontFamily;
  }
 
 .content div h1{
- color: white;
+ color: $blackColor;
 }
 
 article {
@@ -98,6 +98,10 @@ article {
   grid-template-columns: 3fr 2fr;
   margin-top: 15px;
   padding: 15px;
+}
+
+#artcontent h1{
+  color: $blackColor;
 }
 
 /**General code finish here*/
@@ -122,7 +126,7 @@ article {
 #advertising h1 {
   text-align: center;
   font-size: 40px;
-  color: #ffffff;
+  color: $whiteColor;
      }
 
 .artcontent{
@@ -136,7 +140,7 @@ article {
     grid-column: 2;
     }
 .artcontent h1{
-  color: black;
+  color: $blackColor;
 }
 
 
@@ -151,7 +155,7 @@ article {
     grid-template-rows: 1fr;
   }
 #grid h2,p{
-   color: black;
+   color: $blackColor;
 }
 
   #CurrentTemp{
@@ -169,12 +173,12 @@ article {
   #CurrentTemp h1 {
        text-align: center;
        font-size: 40px;
-       color: #ffffff;
+       color: $whiteColor;
   }
   #CurrentTemp p {
       text-align: center;
       font-size: 20px;
-      color: #ffffff;
+      color: $whiteColor;
   }
   
   #forecast {
@@ -187,7 +191,7 @@ article {
       padding-bottom: 1.5rem;
   }
   #forecast p {
-   color: #ffffff;
+   color: $whiteColor;
 }
 
 
@@ -199,13 +203,13 @@ article {
 
 .rentalinfo section h2{
   text-align: center;
-  color: black;
+  color: $blackColor;
 
 }
 
 .rentalinfo section p,h1,h3{
   text-align: center;
-  color: black;
+  color: $blackColor;
 
 }
 
@@ -287,11 +291,11 @@ textarea{
   margin-right: auto;
   }
   .contentform{
-    color: black;
+    color: $blackColor;
   }
             
   form{
-  background-color: #ffffff;
+  background-color: $whiteColor;
   padding: 1.5em;
   margin: 1em 0;
   border-radius: 10px;
@@ -353,7 +357,7 @@ border: solid;
 }
 
 #contact h3{
-  color: black;
+  color: $blackColor;
   }
 
 
@@ -398,7 +402,7 @@ grid-template-columns: 1fr 1fr 1fr;
  /*footer*/
 footer{
   background-color: #283618;
-  color: #ffffff;    
+  color: $whiteColor;    
   text-align: center;
   border-radius: 2px solid;
   margin: 10px;
