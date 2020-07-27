@@ -1,0 +1,150 @@
+@media only screen and (min-width: 900px) {
+   h1  {
+      font-size: 2.25em;
+      text-align: center;
+   }
+   h2, #motto {
+      font-size: 1.5em;
+   }
+   #title {
+      font-size: 2.25em;
+   }
+
+   article {
+   display: grid;
+   grid-template-columns: 3fr 2fr;
+   margin-top: 15px;
+   padding: 15px;
+   }
+
+   #summ picture {
+   width: 100%;
+   }
+
+/*forectast*/
+   
+#forecast {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: #BFD7BA;
+   color: #F3E9D2;
+   margin: 2rem;
+   padding-bottom: 1.5rem;
+}
+
+  
+
+
+  #phrase img {
+   width: 100%;
+   max-width: 55px;
+   padding-right: 1em;
+   
+}
+
+  /*contact info*/
+  
+  #map {
+   display: flex;
+   padding: 15px;
+   margin: auto;
+   background-color: #BFD7BA;
+   box-shadow: #114B5F;
+   align-items: center;
+}
+
+#map-pic {
+   margin-top: 0;
+   margin: auto;
+   display: flex;
+}
+
+#maps-google {
+
+   display: block;
+   max-width: 80%;
+   height: 300px;
+   padding: 25px;
+   
+   
+}
+
+#contact-title{
+   grid-column: 1 / 3;
+   grid-row: 1;
+   padding: 25px;
+
+}
+#article {
+   padding: 25px;
+
+}
+
+.social-icons img {
+   width: 100%;
+   max-width: 25px;
+   padding-right: 1em;
+   align-content: center;
+}
+
+#maps-google{
+   width: 100%;
+}
+/*/////////////////*/
+
+img[data-src] {
+   filter: blur(0.2em);
+ }
+ 
+ img {
+   filter: blur(0em);
+   transition: filter 1s;
+ }
+
+
+ }
+
+ .gallery-img {
+   width: 100%
+   padding 25px;
+ }
+
+ #gallery {
+   grid-template-columns: 1fr 1fr 1fr;
+    }
+ 
+
+ #gallery figure:hover {
+   box-shadow: 0 0 50px #F2DDA4;
+ }
+
+
+ 
+/*homepage*/
+div.Town{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   background-color: #413c58;
+}
+div.Town section{
+   display: flex;
+   flex-direction: column;
+   margin-top: 1em;
+   margin-bottom: 1em;
+}
+
+section:nth-child(even) img{
+   grid-column: 2;
+}
+section:nth-child(even) .townData{
+   grid-column: 1;
+   grid-row: 1;
+}
+
+#dashboard{
+width: 100%;
+}
+
